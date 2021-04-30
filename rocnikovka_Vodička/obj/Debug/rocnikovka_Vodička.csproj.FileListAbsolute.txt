@@ -1,0 +1,15 @@
+C:\Users\Rogiave\source\repos\rocnikovka_Vodička\rocnikovka_Vodička\bin\Debug\rocnikovka_Vodička.exe.config
+C:\Users\Rogiave\source\repos\rocnikovka_Vodička\rocnikovka_Vodička\bin\Debug\rocnikovka_Vodička.exe
+C:\Users\Rogiave\source\repos\rocnikovka_Vodička\rocnikovka_Vodička\bin\Debug\rocnikovka_Vodička.pdb
+C:\Users\Rogiave\source\repos\rocnikovka_Vodička\rocnikovka_Vodička\obj\Debug\rocnikovka_Vodička.csprojAssemblyReference.cache
+C:\Users\Rogiave\source\repos\rocnikovka_Vodička\rocnikovka_Vodička\obj\Debug\MainWindow.g.cs
+C:\Users\Rogiave\source\repos\rocnikovka_Vodička\rocnikovka_Vodička\obj\Debug\App.g.cs
+C:\Users\Rogiave\source\repos\rocnikovka_Vodička\rocnikovka_Vodička\obj\Debug\rocnikovka_Vodička_MarkupCompile.cache
+C:\Users\Rogiave\source\repos\rocnikovka_Vodička\rocnikovka_Vodička\obj\Debug\rocnikovka_Vodička_MarkupCompile.lref
+C:\Users\Rogiave\source\repos\rocnikovka_Vodička\rocnikovka_Vodička\obj\Debug\MainWindow.baml
+C:\Users\Rogiave\source\repos\rocnikovka_Vodička\rocnikovka_Vodička\obj\Debug\rocnikovka_Vodička.g.resources
+C:\Users\Rogiave\source\repos\rocnikovka_Vodička\rocnikovka_Vodička\obj\Debug\rocnikovka_Vodička.Properties.Resources.resources
+C:\Users\Rogiave\source\repos\rocnikovka_Vodička\rocnikovka_Vodička\obj\Debug\rocnikovka_Vodička.csproj.GenerateResource.cache
+C:\Users\Rogiave\source\repos\rocnikovka_Vodička\rocnikovka_Vodička\obj\Debug\rocnikovka_Vodička.csproj.CoreCompileInputs.cache
+C:\Users\Rogiave\source\repos\rocnikovka_Vodička\rocnikovka_Vodička\obj\Debug\rocnikovka_Vodička.exe
+C:\Users\Rogiave\source\repos\rocnikovka_Vodička\rocnikovka_Vodička\obj\Debug\rocnikovka_Vodička.pdb
