@@ -24,5 +24,17 @@ namespace rocnikovka_Vodička
         {
             InitializeComponent();
         }
+
+
+
+        private void ucet_pridani(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void ucet_odebrani(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

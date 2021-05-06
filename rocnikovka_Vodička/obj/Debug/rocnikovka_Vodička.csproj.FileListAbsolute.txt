@@ -13,3 +13,5 @@ C:\Users\Rogiave\source\repos\rocnikovka_Vodička\rocnikovka_Vodička\obj\Debug\
 C:\Users\Rogiave\source\repos\rocnikovka_Vodička\rocnikovka_Vodička\obj\Debug\rocnikovka_Vodička.csproj.CoreCompileInputs.cache
 C:\Users\Rogiave\source\repos\rocnikovka_Vodička\rocnikovka_Vodička\obj\Debug\rocnikovka_Vodička.exe
 C:\Users\Rogiave\source\repos\rocnikovka_Vodička\rocnikovka_Vodička\obj\Debug\rocnikovka_Vodička.pdb
+C:\Users\Rogiave\source\repos\rocnikovka_Vodička\rocnikovka_Vodička\obj\Debug\hlavni_kalendar.g.cs
+C:\Users\Rogiave\source\repos\rocnikovka_Vodička\rocnikovka_Vodička\obj\Debug\ucet.g.cs
