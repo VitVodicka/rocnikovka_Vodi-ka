@@ -33,6 +33,11 @@ namespace rocnikovka_Vodička
             Zmena("listPrihlasovani");
         }
 
+        public void Passcheck(string passInput)
+        {
+
+        }
+
         public event PropertyChangedEventHandler PropertyChanged;
 
         private void Zmena(string vlastnost)

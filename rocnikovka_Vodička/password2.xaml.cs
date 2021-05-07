@@ -15,28 +15,20 @@ using System.Windows.Shapes;
 namespace rocnikovka_Vodička
 {
     /// <summary>
-    /// Interakční logika pro uctik2.xaml
+    /// Interakční logika pro password2.xaml
     /// </summary>
-    public partial class uctik2 : Window
+    public partial class password2 : Window
     {
         login_details log = new login_details();
-        public uctik2()
+        public password2()
         {
             InitializeComponent();
-            DataContext = log;
         }
 
-        private void ucet_pridani(object sender, RoutedEventArgs e)
+        private void okButton(object sender, RoutedEventArgs e)
         {
-            add_page add = new add_page();
-            add.Show();
+            log.Passcheck(passwordInput.Text);
+            this.Close();
         }
-
-        private void ucet_odebrani(object sender, RoutedEventArgs e)
-        {
-            log.Delete((login)users.SelectedItem);
-        }
-
-       
     }
 }

@@ -63,6 +63,9 @@
     </Compile>
     <Compile Include="login details.cs" />
     <Compile Include="login.cs" />
+    <Compile Include="password2.xaml.cs">
+      <DependentUpon>password2.xaml</DependentUpon>
+    </Compile>
     <Compile Include="uctik2.xaml.cs">
       <DependentUpon>uctik2.xaml</DependentUpon>
     </Compile>
@@ -86,6 +89,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="password2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="uctik2.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
