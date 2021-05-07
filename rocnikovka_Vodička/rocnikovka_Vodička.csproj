@@ -61,6 +61,8 @@
     <Compile Include="hlavni_kalendar.xaml.cs">
       <DependentUpon>hlavni_kalendar.xaml</DependentUpon>
     </Compile>
+    <Compile Include="login details.cs" />
+    <Compile Include="login.cs" />
     <Compile Include="uctik2.xaml.cs">
       <DependentUpon>uctik2.xaml</DependentUpon>
     </Compile>

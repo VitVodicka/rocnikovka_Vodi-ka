@@ -40,6 +40,30 @@ namespace rocnikovka_Vodička {
     /// </summary>
     public partial class add_page : System.Windows.Window, System.Windows.Markup.IComponentConnector {
         
+        
+        #line 22 "..\..\add_page.xaml"
+        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
+        internal System.Windows.Controls.TextBox prezdivka;
+        
+        #line default
+        #line hidden
+        
+        
+        #line 24 "..\..\add_page.xaml"
+        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
+        internal System.Windows.Controls.TextBox mail;
+        
+        #line default
+        #line hidden
+        
+        
+        #line 26 "..\..\add_page.xaml"
+        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
+        internal System.Windows.Controls.TextBox heslo;
+        
+        #line default
+        #line hidden
+        
         private bool _contentLoaded;
         
         /// <summary>
@@ -77,6 +101,15 @@ namespace rocnikovka_Vodička {
             
             #line default
             #line hidden
+            return;
+            case 2:
+            this.prezdivka = ((System.Windows.Controls.TextBox)(target));
+            return;
+            case 3:
+            this.mail = ((System.Windows.Controls.TextBox)(target));
+            return;
+            case 4:
+            this.heslo = ((System.Windows.Controls.TextBox)(target));
             return;
             }
             this._contentLoaded = true;

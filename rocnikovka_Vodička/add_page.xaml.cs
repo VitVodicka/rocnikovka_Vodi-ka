@@ -19,13 +19,17 @@ namespace rocnikovka_Vodička
     /// </summary>
     public partial class add_page : Window
     {
+        login_details log = new login_details();
         public add_page()
         {
+            
+
             InitializeComponent();
         }
 
         private void pridani_tlacitko(object sender, RoutedEventArgs e)
         {
+            log.addingToList(prezdivka.Text, mail.Text, heslo.Text);
             this.Close();
         }
     }
