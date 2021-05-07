@@ -1,0 +1,38 @@
+﻿<Window x:Class="rocnikovka_Vodička.add_page"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:rocnikovka_Vodička"
+        mc:Ignorable="d"
+        Title="add_page" Height="450" Width="800">
+    <Grid Background="SlateGray" >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.3*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="0.2*"/>
+
+        </Grid.RowDefinitions>
+
+        <Label Content="Přidání účtu" Grid.Column="0" HorizontalAlignment="Center"  VerticalAlignment="Top" FontFamily="Segoe UI Black" FontSize="36"  Grid.ColumnSpan="3" Width="261"/>
+        <Button Content="Přidat" HorizontalAlignment="Center" Grid.ColumnSpan="2"  VerticalAlignment="Center" Width="192" Height="40" Grid.Row="2" Click="pridani_tlacitko" HorizontalContentAlignment="Center" />
+
+        <StackPanel HorizontalAlignment="Stretch"  Grid.Row="1" VerticalAlignment="Stretch"  Orientation="Vertical">
+            <Label Content="Jméno" HorizontalAlignment="Center" FontFamily="Verdana" FontSize="22" Foreground="#FF5BC1AC"/>
+            <TextBox HorizontalAlignment="Center" Height="23" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120" />
+            <Label Content="Přijmení" FontFamily="Verdana" FontSize="22" Foreground="#FF5BC1AC" HorizontalAlignment="Center"/>
+            <TextBox HorizontalAlignment="Center" Height="23" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120" />
+            <Label Content="E-mail" FontFamily="Verdana" FontSize="22" Foreground="#FF5BC1AC" HorizontalAlignment="Center"/>
+            <TextBox HorizontalAlignment="Center" Height="23" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+            <Label Content="Heslo" FontFamily="Verdana" FontSize="22" Foreground="#FF5BC1AC" HorizontalAlignment="Center"/>
+            <TextBox HorizontalAlignment="Center" Height="23" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+
+
+        </StackPanel>
+
+
+
+
+
+    </Grid>
+</Window>

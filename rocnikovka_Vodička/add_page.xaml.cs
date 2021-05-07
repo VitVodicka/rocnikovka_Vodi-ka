@@ -10,31 +10,23 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace rocnikovka_Vodička
 {
     /// <summary>
-    /// Interakční logika pro ucet.xaml
+    /// Interakční logika pro add_page.xaml
     /// </summary>
-    public partial class ucet : Page
+    public partial class add_page : Window
     {
-        public ucet()
+        public add_page()
         {
             InitializeComponent();
         }
 
-
-
-        private void ucet_pridani(object sender, RoutedEventArgs e)
+        private void pridani_tlacitko(object sender, RoutedEventArgs e)
         {
-
-        }
-
-        private void ucet_odebrani(object sender, RoutedEventArgs e)
-        {
-
+            this.Close();
         }
     }
 }

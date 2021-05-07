@@ -10,24 +10,28 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace rocnikovka_Vodička
 {
     /// <summary>
-    /// Interakční logika pro MainWindow.xaml
+    /// Interakční logika pro uctik2.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class uctik2 : Window
     {
-        public MainWindow()
+        public uctik2()
         {
             InitializeComponent();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void ucet_pridani(object sender, RoutedEventArgs e)
         {
-            this.Close();
+
+        }
+
+        private void ucet_odebrani(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

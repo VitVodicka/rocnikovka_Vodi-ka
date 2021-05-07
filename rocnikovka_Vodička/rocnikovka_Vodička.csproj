@@ -55,13 +55,19 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="add_page.xaml.cs">
+      <DependentUpon>add_page.xaml</DependentUpon>
+    </Compile>
     <Compile Include="hlavni_kalendar.xaml.cs">
       <DependentUpon>hlavni_kalendar.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ucet.cs" />
-    <Compile Include="ucet.xaml.cs">
-      <DependentUpon>ucet.xaml</DependentUpon>
+    <Compile Include="uctik2.xaml.cs">
+      <DependentUpon>uctik2.xaml</DependentUpon>
     </Compile>
+    <Page Include="add_page.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="hlavni_kalendar.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -78,7 +84,7 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="ucet.xaml">
+    <Page Include="uctik2.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

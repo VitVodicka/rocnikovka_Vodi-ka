@@ -14,4 +14,8 @@ C:\Users\Rogiave\source\repos\rocnikovka_Vodička\rocnikovka_Vodička\obj\Debug\
 C:\Users\Rogiave\source\repos\rocnikovka_Vodička\rocnikovka_Vodička\obj\Debug\rocnikovka_Vodička.exe
 C:\Users\Rogiave\source\repos\rocnikovka_Vodička\rocnikovka_Vodička\obj\Debug\rocnikovka_Vodička.pdb
 C:\Users\Rogiave\source\repos\rocnikovka_Vodička\rocnikovka_Vodička\obj\Debug\hlavni_kalendar.g.cs
-C:\Users\Rogiave\source\repos\rocnikovka_Vodička\rocnikovka_Vodička\obj\Debug\ucet.g.cs
+C:\Users\Rogiave\source\repos\rocnikovka_Vodička\rocnikovka_Vodička\obj\Debug\uctik2.g.cs
+C:\Users\Rogiave\source\repos\rocnikovka_Vodička\rocnikovka_Vodička\obj\Debug\hlavni_kalendar.baml
+C:\Users\Rogiave\source\repos\rocnikovka_Vodička\rocnikovka_Vodička\obj\Debug\uctik2.baml
+C:\Users\Rogiave\source\repos\rocnikovka_Vodička\rocnikovka_Vodička\obj\Debug\add_page.g.cs
+C:\Users\Rogiave\source\repos\rocnikovka_Vodička\rocnikovka_Vodička\obj\Debug\add_page.baml
