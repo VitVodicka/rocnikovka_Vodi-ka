@@ -19,19 +19,22 @@ namespace rocnikovka_Vodička
     /// </summary>
     public partial class uctik2 : Window
     {
+        login_details log = new login_details();
         public uctik2()
         {
             InitializeComponent();
+            DataContext = log;
         }
 
         private void ucet_pridani(object sender, RoutedEventArgs e)
         {
-
+            add_page add = new add_page();
+            add.Show();
         }
 
         private void ucet_odebrani(object sender, RoutedEventArgs e)
         {
-
+            log.Delete((login)users.SelectedItem);
         }
     }
 }
