@@ -38,7 +38,8 @@ namespace rocnikovka_Vodička
         }
 
         private void users_MouseDoubleClick(object sender, MouseButtonEventArgs e)
-        {
+        {// ukázání hesla menu
+
             password2 pas = new password2();
             pas.Show();
         }

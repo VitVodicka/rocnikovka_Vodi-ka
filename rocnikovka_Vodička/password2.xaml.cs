@@ -26,7 +26,7 @@ namespace rocnikovka_Vodička
         }
 
         private void okButton(object sender, RoutedEventArgs e)
-        {
+        {//checkování, zda je heslo stejné
             log.Passcheck(passwordInput.Text);
             this.Close();
         }
