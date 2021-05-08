@@ -37,6 +37,10 @@ namespace rocnikovka_Vodička
             log.Delete((login)users.SelectedItem);
         }
 
-       
+        private void users_MouseDoubleClick(object sender, MouseButtonEventArgs e)
+        {
+            password2 pas = new password2();
+            pas.Show();
+        }
     }
 }

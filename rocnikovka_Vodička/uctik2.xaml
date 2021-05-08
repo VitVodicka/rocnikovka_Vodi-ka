@@ -18,7 +18,7 @@
         <ColumnDefinition Width="*"/>
     </Grid.ColumnDefinitions>
     <Label Content="Účty" Grid.Column="0" HorizontalAlignment="Center"  VerticalAlignment="Top" FontFamily="Segoe UI Black" FontSize="36"  Grid.ColumnSpan="2"/>
-        <ListView Grid.Column="0" HorizontalAlignment="Stretch" Height="250"  VerticalAlignment="Top" Grid.ColumnSpan="2" Margin="10,100,10,0" Name="users" ItemsSource="{Binding listPrihlasovani}" FontFamily="Verdana" FontSize="16"  SelectionMode="Single" >
+        <ListView Grid.Column="0" HorizontalAlignment="Stretch" Height="250"  VerticalAlignment="Top" Grid.ColumnSpan="2" Margin="10,100,10,0" Name="users" ItemsSource="{Binding listPrihlasovani}" FontFamily="Verdana" FontSize="16"  SelectionMode="Single" MouseDoubleClick="users_MouseDoubleClick" SelectionChanged="users_SelectionChanged" >
         <ListView.View>
                 <GridView>
                     <GridViewColumn DisplayMemberBinding="{Binding Prezdivka}" Width="380" Header="Přezdívka"></GridViewColumn>
