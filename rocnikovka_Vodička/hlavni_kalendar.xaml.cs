@@ -10,7 +10,6 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace rocnikovka_Vodička
@@ -18,7 +17,7 @@ namespace rocnikovka_Vodička
     /// <summary>
     /// Interakční logika pro hlavni_kalendar.xaml
     /// </summary>
-    public partial class hlavni_kalendar : Page
+    public partial class hlavni_kalendar : Window
     {
         public hlavni_kalendar()
         {

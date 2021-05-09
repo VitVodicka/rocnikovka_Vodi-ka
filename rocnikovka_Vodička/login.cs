@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace rocnikovka_Vodička
 {
-    class login
+    class login:login_details
     {
         public string Prezdivka { get; set; }
         public string Mail { get; set; }

@@ -22,7 +22,6 @@ namespace rocnikovka_Vodička
         login_details log = new login_details();
         public add_page()
         {
-            
 
             InitializeComponent();
         }

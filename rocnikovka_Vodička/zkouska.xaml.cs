@@ -10,26 +10,19 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace rocnikovka_Vodička
 {
     /// <summary>
-    /// Interakční logika pro password2.xaml
+    /// Interakční logika pro zkouska.xaml
     /// </summary>
-    public partial class password2 : Window
+    public partial class zkouska : UserControl
     {
-        login_details log = new login_details();
-        public password2()
+        public zkouska()
         {
             InitializeComponent();
-            DataContext = log;
-        }
-
-        private void okButton(object sender, RoutedEventArgs e)
-        {//checkování, zda je heslo stejné
-            log.Passcheck(passwordInput.Text);
-            this.Close();
         }
     }
 }
