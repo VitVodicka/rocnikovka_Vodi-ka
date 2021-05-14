@@ -69,9 +69,6 @@
     <Compile Include="uctik2.xaml.cs">
       <DependentUpon>uctik2.xaml</DependentUpon>
     </Compile>
-    <Compile Include="vitkoslav.xaml.cs">
-      <DependentUpon>vitkoslav.xaml</DependentUpon>
-    </Compile>
     <Compile Include="zkouska.xaml.cs">
       <DependentUpon>zkouska.xaml</DependentUpon>
     </Compile>
@@ -100,10 +97,6 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="uctik2.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="vitkoslav.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

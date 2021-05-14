@@ -27,7 +27,7 @@ namespace rocnikovka_Vodička
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            this.Close();
+            this.Close();//po přidání upomínky, zavře se okno
         }
     }
 }

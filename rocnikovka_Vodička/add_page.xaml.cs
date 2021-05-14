@@ -19,7 +19,7 @@ namespace rocnikovka_Vodička
     /// </summary>
     public partial class add_page : Window
     {
-        login_details log = new login_details();
+        login_details log = new login_details();//vytvoření třídy login_details v add_page
         public add_page()
         {
 
@@ -28,7 +28,7 @@ namespace rocnikovka_Vodička
 
         private void pridani_tlacitko(object sender, RoutedEventArgs e)
         {
-            log.addingToList(prezdivka.Text, mail.Text, heslo.Text);
+            log.addingToList(prezdivka.Text, mail.Text, heslo.Text);//po stiknutí tlačítka přidat se přidají pomocí funkce addingToList do databáze přezdívka, mail a heslo. Po přidání dat do databáze se zavře okno.
             this.Close();
         }
     }

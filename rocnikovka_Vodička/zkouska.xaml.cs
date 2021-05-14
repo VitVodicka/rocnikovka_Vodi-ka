@@ -18,8 +18,10 @@ namespace rocnikovka_Vodička
     /// <summary>
     /// Interakční logika pro zkouska.xaml
     /// </summary>
+    
     public partial class zkouska : UserControl
     {
+        login_details l = new login_details();
         public zkouska()
         {
             InitializeComponent();
