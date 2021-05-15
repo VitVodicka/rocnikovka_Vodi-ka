@@ -20,13 +20,27 @@ namespace rocnikovka_Vodička
     /// </summary>
     public partial class MainWindow : Window
     {
+        login_details log = new login_details();
         public MainWindow()
         {
             InitializeComponent();
+            
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            if (easy.IsChecked == true )
+            {
+                log.AddingRemark(upominka.Text, podrobnosti.Text, dateInput.SelectedDate, "easy");
+            }
+            if (medium.IsChecked == true)
+            {
+                log.AddingRemark(upominka.Text, podrobnosti.Text, dateInput.SelectedDate, "medium");
+            }
+            if (hard.IsChecked == true)
+            {
+                log.AddingRemark(upominka.Text, podrobnosti.Text, dateInput.SelectedDate, "hard");
+            }
             this.Close();//po přidání upomínky, zavře se okno
         }
     }

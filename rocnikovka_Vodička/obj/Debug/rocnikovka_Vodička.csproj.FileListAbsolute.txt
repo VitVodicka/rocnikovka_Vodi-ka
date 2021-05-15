@@ -23,5 +23,3 @@ C:\Users\Rogiave\source\repos\rocnikovka_Vodička\rocnikovka_Vodička\obj\Debug\
 C:\Users\Rogiave\source\repos\rocnikovka_Vodička\rocnikovka_Vodička\obj\Debug\zkouska.g.cs
 C:\Users\Rogiave\source\repos\rocnikovka_Vodička\rocnikovka_Vodička\obj\Debug\password2.baml
 C:\Users\Rogiave\source\repos\rocnikovka_Vodička\rocnikovka_Vodička\obj\Debug\zkouska.baml
-C:\Users\Rogiave\source\repos\rocnikovka_Vodička\rocnikovka_Vodička\obj\Debug\vitkoslav.g.cs
-C:\Users\Rogiave\source\repos\rocnikovka_Vodička\rocnikovka_Vodička\obj\Debug\vitkoslav.baml

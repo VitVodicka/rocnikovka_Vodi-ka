@@ -58,6 +58,7 @@
     <Compile Include="add_page.xaml.cs">
       <DependentUpon>add_page.xaml</DependentUpon>
     </Compile>
+    <Compile Include="events.cs" />
     <Compile Include="hlavni_kalendar.xaml.cs">
       <DependentUpon>hlavni_kalendar.xaml</DependentUpon>
     </Compile>

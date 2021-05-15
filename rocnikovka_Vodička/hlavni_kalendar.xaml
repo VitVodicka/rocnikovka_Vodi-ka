@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:rocnikovka_Vodička"
         mc:Ignorable="d"
-        Title="hlavni_kalendar"  Height="920" Width="1400">
+        Title="hlavni_kalendar"  Height="960" Width="1400">
     <Grid Background="#FF0C090D" >
 
         <Label Content="Přidání účtu" Grid.Column="0" HorizontalAlignment="Center"  VerticalAlignment="Top" FontFamily="Segoe UI Black" FontSize="36" Width="262" Foreground="White" Margin="390,12,372,0" />
@@ -63,7 +63,7 @@
         <Button Content="-" HorizontalAlignment="Left" Margin="942,21,0,0" VerticalAlignment="Top" Width="40" Height="40" Foreground="White" FontSize="24" Background="Black" BorderBrush="White" FontWeight="Bold" BorderThickness="4" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Click="KalendarMinus"/>
         <Button Content="+" HorizontalAlignment="Left" Margin="1338,21,0,0" VerticalAlignment="Top" Width="40"  Height="40" Foreground="White" FontSize="24" Background="Black" BorderBrush="White" FontWeight="Bold" BorderThickness="4" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Click="KalendarPlus" >
         </Button>
-        <TextBlock TextAlignment="Center"  Margin="987,27,66,0" TextWrapping="Wrap" Text="{Binding }" VerticalAlignment="Top" Height="29" Foreground="White" FontSize="18" FontFamily="Verdana" Name="mesicnidatum" />
+        <TextBlock TextAlignment="Center"  Margin="987,27,66,0" TextWrapping="Wrap" Text="{Binding aktualniDatum, StringFormat=MM.yyyy}" VerticalAlignment="Top" Height="29" Foreground="White" FontSize="18" FontFamily="Verdana" Name="mesicnidatum" />
         <StackPanel HorizontalAlignment="Left" Height="90" Margin="209,119,0,0" VerticalAlignment="Top" Width="184">
             <Label Content="narozeniny, tvpke čau zdravím" FontSize="11" FontFamily="Verdana" Height="30" Foreground="#FFDDDDDD" Background="#FFDDDDDD"   ></Label>
             <Label Content="bla" FontSize="11" FontFamily="Verdana" Height="30" Foreground="#FFDDDDDD" Background="#FFDDDDDD"></Label>

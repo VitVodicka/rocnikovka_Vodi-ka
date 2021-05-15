@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:rocnikovka_Vodička"
         mc:Ignorable="d"
         Title="add_page" Height="450" Width="800">
-    <Grid Background="SlateGray" >
+    <Grid Background="Black" >
         <Grid.RowDefinitions>
             <RowDefinition Height="0.3*"/>
             <RowDefinition Height="1*"/>
@@ -14,15 +14,15 @@
 
         </Grid.RowDefinitions>
 
-        <Label Content="Přidání účtu" Grid.Column="0" HorizontalAlignment="Center"  VerticalAlignment="Top" FontFamily="Segoe UI Black" FontSize="36"  Grid.ColumnSpan="3" Width="261"/>
-        <Button Content="Přidat" HorizontalAlignment="Center" Grid.ColumnSpan="2"  VerticalAlignment="Center" Width="192" Height="40" Grid.Row="2" Click="pridani_tlacitko" HorizontalContentAlignment="Center" FontFamily="Verdana" FontSize="16"/>
+        <Label Content="Přidání účtu" Grid.Column="0" HorizontalAlignment="Center"  VerticalAlignment="Top" FontFamily="Segoe UI Black" FontSize="36"  Grid.ColumnSpan="3" Width="261" Foreground="White"/>
+        <Button Content="Přidat" HorizontalAlignment="Center" Grid.ColumnSpan="2"  VerticalAlignment="Center" Width="192" Height="40" Grid.Row="2" Click="pridani_tlacitko" HorizontalContentAlignment="Center" FontFamily="Verdana" FontSize="16" Foreground="White" BorderBrush="White" Background="Black" BorderThickness="3"/>
 
         <StackPanel HorizontalAlignment="Stretch"  Grid.Row="1" VerticalAlignment="Stretch"  Orientation="Vertical">
-            <Label Content="Přezdívka" HorizontalAlignment="Center" FontFamily="Verdana" FontSize="22" Foreground="#FF5BC1AC" Margin="0,10,0,10"/>
+            <Label Content="Přezdívka" HorizontalAlignment="Center" FontFamily="Verdana" FontSize="22" Foreground="White" Margin="0,10,0,10"/>
             <TextBox HorizontalAlignment="Center" Height="45" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="365"  TextAlignment="Center" FontFamily="Verdana" FontSize="16" Name="prezdivka" />
-            <Label Content="E-mail" FontFamily="Verdana" FontSize="22" Foreground="#FF5BC1AC" HorizontalAlignment="Center"/>
+            <Label Content="E-mail" FontFamily="Verdana" FontSize="22" Foreground="White" HorizontalAlignment="Center"/>
             <TextBox HorizontalAlignment="Center" Height="45" TextWrapping="Wrap" Text="" VerticalAlignment="Top"  Width="365"  TextAlignment="Center" FontFamily="Verdana" FontSize="16" Name="mail"/>
-            <Label Content="Heslo" FontFamily="Verdana" FontSize="22" Foreground="#FF5BC1AC" HorizontalAlignment="Center"/>
+            <Label Content="Heslo" FontFamily="Verdana" FontSize="22" Foreground="White" HorizontalAlignment="Center"/>
             <TextBox HorizontalAlignment="Center" Height="45" TextWrapping="Wrap" Text="" VerticalAlignment="Top"  Width="365"  TextAlignment="Center" FontFamily="Verdana" FontSize="16" Name="heslo"/>
 
 

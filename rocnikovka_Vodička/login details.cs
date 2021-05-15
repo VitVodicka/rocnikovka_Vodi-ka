@@ -11,8 +11,13 @@ namespace rocnikovka_Vodička
     class login_details:INotifyPropertyChanged// zde je implementováno rozhraní pro aktualizaci prvků
     {       
         public List<login> listPrihlasovani { get; set; }//list, do kterého se přidávají uživatelské údaje(email, heslo, přezdívka)
+        public List<events> listEvents { get; set; }
         public int Index { get; set; }//meziproměnná s názvem index
         public string Help { get; set; }
+        public DateTime TodayNowDate { get
+            {
+                return DateTime.Today;
+            } }
 
         public DateTime aktualniDatum {//proměnná s aktuálním datumem, která má ze začátku aktuální datum, ale pomocí tlačítek plus a mínus mění měsíce
             get
@@ -38,6 +43,12 @@ namespace rocnikovka_Vodička
         public List<string> DateCalendar2025 = new List<string> { "31", "3", "28", "6", "31", "6", "30", "2", "31", "4", "30", "7", "31", "2", "31", "5", "30", "1", "31", "3", "30", "6", "31", "1" };
         public List<string> DateCalendar2026 = new List<string> { "31", "4", "28", "7", "31", "7", "30", "3", "31", "5", "30", "1", "31", "3", "31", "6", "30", "2", "31", "4", "30", "7", "31", "2" };
         
+        public void AddingRemark(string remark, string detail, DateTime? date, string importance)
+        {
+            events eventik = new events(remark,detail,date,importance);
+            listEvents.Add(eventik);
+        }
+
         public login_details()//v konstruktoru vytvoření listu na přihlašování
         {
             listPrihlasovani = new List<login>();
