@@ -67,6 +67,9 @@
     <Compile Include="password2.xaml.cs">
       <DependentUpon>password2.xaml</DependentUpon>
     </Compile>
+    <Compile Include="pripominky.xaml.cs">
+      <DependentUpon>pripominky.xaml</DependentUpon>
+    </Compile>
     <Compile Include="uctik2.xaml.cs">
       <DependentUpon>uctik2.xaml</DependentUpon>
     </Compile>
@@ -94,6 +97,10 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="password2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="pripominky.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -134,6 +141,9 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="logo_rocnikovka.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="list %282%29.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

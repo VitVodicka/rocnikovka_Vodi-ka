@@ -12,286 +12,65 @@
 
         <WrapPanel HorizontalAlignment="Stretch" Margin="5,78,0,0" VerticalAlignment="Stretch"   >
 
-            <Button Content="1" FontSize="30" Margin="5" Width="187" Height="130" VerticalContentAlignment="Top"></Button>
-            <Button Content="2" FontSize="30" Margin="5" Width="187" Height="130" VerticalContentAlignment="Top"></Button>
-            <Button Content="3" FontSize="30" Margin="5" Width="187" Height="130" VerticalContentAlignment="Top"></Button>
-            <Button Content="4" FontSize="30" Margin="5" Width="187" Height="130" VerticalContentAlignment="Top"></Button>
-            <Button Content="5" FontSize="30" Margin="5" Width="187" Height="130" VerticalContentAlignment="Top"></Button>
-            <Button FontSize="30" Margin="5" Content="6"  Width="187" Height="130" VerticalContentAlignment="Top"></Button>
-            <Button FontSize="30" Margin="5" Content="7"  Width="187" Height="130" VerticalContentAlignment="Top"></Button>
+            <Button Content="1" FontSize="30" Margin="5" Width="187" Height="130" VerticalContentAlignment="Top" Name="Button1" Click="Button_Click"></Button>
+            <Button Content="2" FontSize="30" Margin="5" Width="187" Height="130" VerticalContentAlignment="Top" Name="Button2" Click="Button_Click"></Button>
+            <Button Content="3" FontSize="30" Margin="5" Width="187" Height="130" VerticalContentAlignment="Top" Name="Button3" Click="Button_Click"></Button>
+            <Button Content="4" FontSize="30" Margin="5" Width="187" Height="130" VerticalContentAlignment="Top" Name="Button4" Click="Button_Click"></Button>
+            <Button Content="5" FontSize="30" Margin="5" Width="187" Height="130" VerticalContentAlignment="Top" Name="Button5" Click="Button_Click"></Button>
+            <Button FontSize="30" Margin="5" Content="6"  Width="187" Height="130" VerticalContentAlignment="Top" Name="Button6"  Click="Button_Click"></Button>
+            <Button FontSize="30" Margin="5" Content="7"  Width="187" Height="130" VerticalContentAlignment="Top" Name="Button7" Click="Button_Click"></Button>
 
-            <Button Content="8" FontSize="30" Margin="5" Width="187" Height="130" VerticalContentAlignment="Top" ></Button>
-            <Button Content="9" FontSize="30" Margin="5" Width="187" Height="130" VerticalContentAlignment="Top"></Button>
-            <Button Content="10" FontSize="30" Margin="5" Width="187" Height="130" VerticalContentAlignment="Top"></Button>
-            <Button Content="11" FontSize="30" Margin="5" Width="187" Height="130" VerticalContentAlignment="Top"></Button>
-            <Button Content="12" FontSize="30" Margin="5" Width="187" Height="130" VerticalContentAlignment="Top"></Button>
-            <Button FontSize="30" Margin="5" Content="13" Width="187" Height="130" VerticalContentAlignment="Top"></Button>
-            <Button FontSize="30" Margin="5" Content="14" Width="187" Height="130" VerticalContentAlignment="Top"></Button>
+            <Button Content="8" FontSize="30" Margin="5" Width="187" Height="130" VerticalContentAlignment="Top" Name="Button8"  Click="Button_Click"></Button>
+            <Button Content="9" FontSize="30" Margin="5" Width="187" Height="130" VerticalContentAlignment="Top" Name="Button9"  Click="Button_Click"></Button>
+            <Button Content="10" FontSize="30" Margin="5" Width="187" Height="130" VerticalContentAlignment="Top" Name="Button10" Click="Button_Click"></Button>
+            <Button Content="11" FontSize="30" Margin="5" Width="187" Height="130" VerticalContentAlignment="Top" Name="Button11" Click="Button_Click"></Button>
+            <Button Content="12" FontSize="30" Margin="5" Width="187" Height="130" VerticalContentAlignment="Top" Name="Button12" Click="Button_Click"></Button>
+            <Button FontSize="30" Margin="5" Content="13" Width="187" Height="130" VerticalContentAlignment="Top" Name="Button13" Click="Button_Click"></Button>
+            <Button FontSize="30" Margin="5" Content="14" Width="187" Height="130" VerticalContentAlignment="Top" Name="Button14" Click="Button_Click"></Button>
 
-            <Button Content="15" FontSize="30" Margin="5" Width="187" Height="130" VerticalContentAlignment="Top"></Button>
-            <Button Content="16" FontSize="30" Margin="5" Width="187" Height="130" VerticalContentAlignment="Top"></Button>
-            <Button Content="17" FontSize="30" Margin="5" Width="187" Height="130" VerticalContentAlignment="Top"></Button>
-            <Button Content="18" FontSize="30" Margin="5" Width="187" Height="130" VerticalContentAlignment="Top"></Button>
-            <Button Content="19" FontSize="30" Margin="5" Width="187" Height="130" VerticalContentAlignment="Top"></Button>
-            <Button FontSize="30" Margin="5" Content="20" Width="187" Height="130" VerticalContentAlignment="Top"></Button>
-            <Button FontSize="30" Margin="5" Content="21" Width="187" Height="130" VerticalContentAlignment="Top"></Button>
+            <Button Content="15" FontSize="30" Margin="5" Width="187" Height="130" VerticalContentAlignment="Top" Name="Button15" Click="Button_Click"></Button>
+            <Button Content="16" FontSize="30" Margin="5" Width="187" Height="130" VerticalContentAlignment="Top" Name="Button16" Click="Button_Click"></Button>
+            <Button Content="17" FontSize="30" Margin="5" Width="187" Height="130" VerticalContentAlignment="Top" Name="Button17" Click="Button_Click"></Button>
+            <Button Content="18" FontSize="30" Margin="5" Width="187" Height="130" VerticalContentAlignment="Top" Name="Button18" Click="Button_Click"></Button>
+            <Button Content="19" FontSize="30" Margin="5" Width="187" Height="130" VerticalContentAlignment="Top" Name="Button19" Click="Button_Click"></Button>
+            <Button FontSize="30" Margin="5" Content="20" Width="187" Height="130" VerticalContentAlignment="Top" Name="Button20" Click="Button_Click"></Button>
+            <Button FontSize="30" Margin="5" Content="21" Width="187" Height="130" VerticalContentAlignment="Top" Name="Button21" Click="Button_Click"></Button>
 
-            <Button Content="22" FontSize="30" Margin="5" Width="187" Height="130" VerticalContentAlignment="Top"></Button>
-            <Button Content="23" FontSize="30" Margin="5" Width="187" Height="130" VerticalContentAlignment="Top"></Button>
-            <Button Content="24" FontSize="30" Margin="5" Width="187" Height="130" VerticalContentAlignment="Top"></Button>
-            <Button Content="25" FontSize="30" Margin="5" Width="187" Height="130" VerticalContentAlignment="Top"></Button>
-            <Button Content="26" FontSize="30" Margin="5" Width="187" Height="130" VerticalContentAlignment="Top"></Button>
-            <Button FontSize="30" Margin="5" Content="27" Width="187" Height="130" VerticalContentAlignment="Top"></Button>
-            <Button FontSize="30" Margin="5" Content="28" Width="187" Height="130" VerticalContentAlignment="Top"></Button>
+            <Button Content="22" FontSize="30" Margin="5" Width="187" Height="130" VerticalContentAlignment="Top"  Name="Button22" Click="Button_Click"></Button>
+            <Button Content="23" FontSize="30" Margin="5" Width="187" Height="130" VerticalContentAlignment="Top"  Name="Button23" Click="Button_Click"></Button>
+            <Button Content="24" FontSize="30" Margin="5" Width="187" Height="130" VerticalContentAlignment="Top"  Name="Button24" Click="Button_Click"></Button>
+            <Button Content="25" FontSize="30" Margin="5" Width="187" Height="130" VerticalContentAlignment="Top"  Name="Button25" Click="Button_Click"></Button>
+            <Button Content="26" FontSize="30" Margin="5" Width="187" Height="130" VerticalContentAlignment="Top"  Name="Button26" Click="Button_Click"></Button>
+            <Button FontSize="30" Margin="5" Content="27" Width="187" Height="130" VerticalContentAlignment="Top"  Name="Button27" Click="Button_Click"></Button>
+            <Button FontSize="30" Margin="5" Content="28" Width="187" Height="130" VerticalContentAlignment="Top"  Name="Button28" Click="Button_Click"></Button>
 
-            <Button Content="29" FontSize="30" Margin="5" Width="187" Height="130" VerticalContentAlignment="Top"></Button>
-            <Button Content="30" FontSize="30" Margin="5" Width="187" Height="130" VerticalContentAlignment="Top"></Button>
-            <Button Content="31" FontSize="30" Margin="5" Width="187" Height="130" VerticalContentAlignment="Top"></Button>
-            <Button Content="32" FontSize="30" Margin="5" Width="187" Height="130" VerticalContentAlignment="Top"></Button>
-            <Button Content="33" FontSize="30" Margin="5" Width="187" Height="130" VerticalContentAlignment="Top"></Button>
-            <Button FontSize="30" Margin="5" Content="34" Width="187" Height="130" VerticalContentAlignment="Top"></Button>
-            <Button FontSize="30" Margin="5" Content="35" Width="187" Height="130" VerticalContentAlignment="Top"></Button>
+            <Button Content="29" FontSize="30" Margin="5" Width="187" Height="130" VerticalContentAlignment="Top"  Name="Button29" Click="Button_Click"></Button>
+            <Button Content="30" FontSize="30" Margin="5" Width="187" Height="130" VerticalContentAlignment="Top"  Name="Button30" Click="Button_Click"></Button>
+            <Button Content="31" FontSize="30" Margin="5" Width="187" Height="130" VerticalContentAlignment="Top"  Name="Button31" Click="Button_Click"></Button>
+            <Button Content="32" FontSize="30" Margin="5" Width="187" Height="130" VerticalContentAlignment="Top"  Name="Button32" Click="Button_Click"></Button>
+            <Button Content="33" FontSize="30" Margin="5" Width="187" Height="130" VerticalContentAlignment="Top"  Name="Button33" Click="Button_Click"></Button>
+            <Button FontSize="30" Margin="5" Content="34" Width="187" Height="130" VerticalContentAlignment="Top"  Name="Button34" Click="Button_Click"></Button>
+            <Button FontSize="30" Margin="5" Content="35" Width="187" Height="130" VerticalContentAlignment="Top"  Name="Button35" Click="Button_Click"></Button>
 
-            <Button Content="36" FontSize="30" Margin="5" Width="187" Height="130" VerticalContentAlignment="Top"></Button>
-            <Button Content="37" FontSize="30" Margin="5" Width="187" Height="130" VerticalContentAlignment="Top"></Button>
-            <Button Content="38" FontSize="30" Margin="5" Width="187" Height="130" VerticalContentAlignment="Top"></Button>
-            <Button Content="39" FontSize="30" Margin="5" Width="187" Height="130" VerticalContentAlignment="Top"></Button>
-            <Button Content="40" FontSize="30" Margin="5" Width="187" Height="130" VerticalContentAlignment="Top"></Button>
-            <Button FontSize="30" Margin="5" Content="41" Width="187" Height="130" VerticalContentAlignment="Top"></Button>
-            <Button FontSize="30" Margin="5" Content="42" Width="187" Height="130" VerticalContentAlignment="Top"></Button>
+            <Button Content="36" FontSize="30" Margin="5" Width="187" Height="130" VerticalContentAlignment="Top" Name="Button36" Click="Button_Click"></Button>
+            <Button Content="37" FontSize="30" Margin="5" Width="187" Height="130" VerticalContentAlignment="Top" Name="Button37" Click="Button_Click"></Button>
+            <Button Content="38" FontSize="30" Margin="5" Width="187" Height="130" VerticalContentAlignment="Top" Name="Button38" Click="Button_Click"></Button>
+            <Button Content="39" FontSize="30" Margin="5" Width="187" Height="130" VerticalContentAlignment="Top" Name="Button39" Click="Button_Click"></Button>
+            <Button Content="40" FontSize="30" Margin="5" Width="187" Height="130" VerticalContentAlignment="Top" Name="Button40" Click="Button_Click"></Button>
+            <Button FontSize="30" Margin="5" Content="41" Width="187" Height="130" VerticalContentAlignment="Top" Name="Button41" Click="Button_Click"></Button>
+            <Button FontSize="30" Margin="5" Content="42" Width="187" Height="130" VerticalContentAlignment="Top" Name="Button42" Click="Button_Click"></Button>
         </WrapPanel>
         <Button Content="-" HorizontalAlignment="Left" Margin="942,21,0,0" VerticalAlignment="Top" Width="40" Height="40" Foreground="White" FontSize="24" Background="Black" BorderBrush="White" FontWeight="Bold" BorderThickness="4" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Click="KalendarMinus"/>
         <Button Content="+" HorizontalAlignment="Left" Margin="1338,21,0,0" VerticalAlignment="Top" Width="40"  Height="40" Foreground="White" FontSize="24" Background="Black" BorderBrush="White" FontWeight="Bold" BorderThickness="4" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Click="KalendarPlus" >
         </Button>
         <TextBlock TextAlignment="Center"  Margin="987,27,66,0" TextWrapping="Wrap" Text="{Binding aktualniDatum, StringFormat=MM.yyyy}" VerticalAlignment="Top" Height="29" Foreground="White" FontSize="18" FontFamily="Verdana" Name="mesicnidatum" />
-        <StackPanel HorizontalAlignment="Left" Height="90" Margin="209,119,0,0" VerticalAlignment="Top" Width="184">
-            <Label Content="narozeniny, tvpke čau zdravím" FontSize="11" FontFamily="Verdana" Height="30" Foreground="#FFDDDDDD" Background="#FFDDDDDD"   ></Label>
-            <Label Content="bla" FontSize="11" FontFamily="Verdana" Height="30" Foreground="#FFDDDDDD" Background="#FFDDDDDD"></Label>
-            <Label Content="bla" FontSize="11" FontFamily="Verdana" Height="30" Foreground="#FFDDDDDD"></Label>
-        </StackPanel>
-        <StackPanel HorizontalAlignment="Left" Height="90" Margin="10,119,0,0" VerticalAlignment="Top" Width="184" >
-            <Label Content="narozeniny, tvpke čau zdravím" FontSize="11" FontFamily="Verdana" Height="30" Foreground="#FFDDDDDD"   ></Label>
-            <Label Content="bla" FontSize="11" FontFamily="Verdana" Height="30" Foreground="#FFDDDDDD"></Label>
-            <Label Content="bla" FontSize="11" FontFamily="Verdana" Height="30" Foreground="#FFDDDDDD"></Label>
-        </StackPanel>
-        <StackPanel HorizontalAlignment="Left" Height="90" Margin="407,119,0,0" VerticalAlignment="Top" Width="184" >
-            <Label Content="narozeniny, tvpke čau zdravím" FontSize="11" FontFamily="Verdana" Height="30" Foreground="#FFDDDDDD" Background="#FFDDDDDD"   ></Label>
-            <Label Content="bla" FontSize="11" FontFamily="Verdana" Height="30" Foreground="#FFDDDDDD"></Label>
-            <Label Content="bla" FontSize="11" FontFamily="Verdana" Height="30" Foreground="#FFDDDDDD"></Label>
-        </StackPanel>
-        <StackPanel HorizontalAlignment="Left" Height="90" Margin="602,119,0,0" VerticalAlignment="Top" Width="184" >
-            <Label Content="narozeniny, tvpke čau zdravím" FontSize="11" FontFamily="Verdana" Height="30" Foreground="#FFDDDDDD" Background="#FFDDDDDD"   ></Label>
-            <Label Content="bla" FontSize="11" FontFamily="Verdana" Height="30" Foreground="#FFDDDDDD" Background="#FFDDDDDD"></Label>
-            <Label Content="bla" FontSize="11" FontFamily="Verdana" Height="30" Foreground="#FFDDDDDD"></Label>
-        </StackPanel>
-        <StackPanel HorizontalAlignment="Left" Height="90" Margin="798,119,0,0" VerticalAlignment="Top" Width="184" >
-            <Label Content="narozeniny, tvpke čau zdravím" FontSize="11" FontFamily="Verdana" Height="30" Foreground="#FFDDDDDD" Background="#FFDDDDDD"   ></Label>
-            <Label Content="bla" FontSize="11" FontFamily="Verdana" Height="30" Foreground="#FFDDDDDD" Background="#FFDDDDDD"></Label>
-            <Label Content="bla" FontSize="11" FontFamily="Verdana" Height="30" Foreground="#FFDDDDDD"></Label>
-        </StackPanel>
-        <StackPanel HorizontalAlignment="Left" Height="90" Margin="997,119,0,0" VerticalAlignment="Top" Width="184" >
-            <Label Content="narozeniny, tvpke čau zdravím" FontSize="11" FontFamily="Verdana" Height="30" Foreground="#FFDDDDDD" Background="#FFDDDDDD"   ></Label>
-            <Label Content="bla" FontSize="11" FontFamily="Verdana" Height="30" Foreground="#FFDDDDDD" Background="#FFDDDDDD"></Label>
-            <Label Content="bla" FontSize="11" FontFamily="Verdana" Height="30" Foreground="#FFDDDDDD"></Label>
-        </StackPanel>
-        <StackPanel HorizontalAlignment="Left" Height="90" Margin="1193,119,0,0" VerticalAlignment="Top" Width="184" >
-            <Label Content="narozeniny, tvpke čau zdravím" FontSize="11" FontFamily="Verdana" Height="30" Foreground="#FFDDDDDD" Background="#FFDDDDDD"   ></Label>
-            <Label Content="bla" FontSize="11" FontFamily="Verdana" Height="30" Foreground="#FFDDDDDD" Background="#FFDDDDDD"></Label>
-            <Label Content="bla" FontSize="11" FontFamily="Verdana" Height="30" Foreground="#FFDDDDDD"></Label>
-        </StackPanel>
-        <StackPanel HorizontalAlignment="Left" Height="90" Margin="10,260,0,0" VerticalAlignment="Top" Width="184" >
-            <Label Content="narozeniny, tvpke čau zdravím" FontSize="11" FontFamily="Verdana" Height="30" Foreground="#FFDDDDDD"   ></Label>
-            <Label Content="bla" FontSize="11" FontFamily="Verdana" Height="30" Foreground="#FFDDDDDD"></Label>
-            <Label Content="bla" FontSize="11" FontFamily="Verdana" Height="30" Foreground="#FFDDDDDD"></Label>
-        </StackPanel>
-        <StackPanel HorizontalAlignment="Left" Height="90" Margin="209,260,0,0" VerticalAlignment="Top" Width="184" >
-            <Label Content="narozeniny, tvpke čau zdravím" FontSize="11" FontFamily="Verdana" Height="30" Foreground="#FFDDDDDD"   ></Label>
-            <Label Content="bla" FontSize="11" FontFamily="Verdana" Height="30" Foreground="#FFDDDDDD"></Label>
-            <Label Content="bla" FontSize="11" FontFamily="Verdana" Height="30" Foreground="#FFDDDDDD"></Label>
-        </StackPanel>
-        <StackPanel HorizontalAlignment="Left" Height="90" Margin="407,260,0,0" VerticalAlignment="Top" Width="184" >
-            <Label Content="narozeniny, tvpke čau zdravím" FontSize="11" FontFamily="Verdana" Height="30" Foreground="#FFDDDDDD"   ></Label>
-            <Label Content="bla" FontSize="11" FontFamily="Verdana" Height="30" Foreground="#FFDDDDDD"></Label>
-            <Label Content="bla" FontSize="11" FontFamily="Verdana" Height="30" Foreground="#FFDDDDDD"></Label>
-        </StackPanel>
-        <StackPanel HorizontalAlignment="Left" Height="90" Margin="602,260,0,0" VerticalAlignment="Top" Width="184" >
-            <Label Content="narozeniny, tvpke čau zdravím" FontSize="11" FontFamily="Verdana" Height="30" Foreground="#FFDDDDDD"   ></Label>
-            <Label Content="bla" FontSize="11" FontFamily="Verdana" Height="30" Foreground="#FFDDDDDD"></Label>
-            <Label Content="bla" FontSize="11" FontFamily="Verdana" Height="30" Foreground="#FFDDDDDD"></Label>
-        </StackPanel>
-        <StackPanel HorizontalAlignment="Left" Height="90" Margin="798,260,0,0" VerticalAlignment="Top" Width="184" >
-            <Label Content="narozeniny, tvpke čau zdravím" FontSize="11" FontFamily="Verdana" Height="30" Foreground="#FFDDDDDD"   ></Label>
-            <Label Content="bla" FontSize="11" FontFamily="Verdana" Height="30" Foreground="#FFDDDDDD"></Label>
-            <Label Content="bla" FontSize="11" FontFamily="Verdana" Height="30" Foreground="#FFDDDDDD"></Label>
-        </StackPanel>
-        <StackPanel HorizontalAlignment="Left" Height="90" Margin="997,260,0,0" VerticalAlignment="Top" Width="184" >
-            <Label Content="narozeniny, tvpke čau zdravím" FontSize="11" FontFamily="Verdana" Height="30" Foreground="#FFDDDDDD"   ></Label>
-            <Label Content="bla" FontSize="11" FontFamily="Verdana" Height="30" Foreground="#FFDDDDDD"></Label>
-            <Label Content="bla" FontSize="11" FontFamily="Verdana" Height="30" Foreground="#FFDDDDDD"></Label>
-        </StackPanel>
-        <StackPanel HorizontalAlignment="Left" Height="90" Margin="10,119,0,0" VerticalAlignment="Top" Width="184" >
-            <Label Content="narozeniny, tvpke čau zdravím" FontSize="11" FontFamily="Verdana" Height="30" Foreground="#FFDDDDDD"   ></Label>
-            <Label Content="bla" FontSize="11" FontFamily="Verdana" Height="30" Foreground="#FFDDDDDD"></Label>
-            <Label Content="bla" FontSize="11" FontFamily="Verdana" Height="30" Foreground="#FFDDDDDD"></Label>
-        </StackPanel>
-        <StackPanel HorizontalAlignment="Left" Height="90" Margin="1193,260,0,0" VerticalAlignment="Top" Width="184" >
-            <Label Content="narozeniny, tvpke čau zdravím" FontSize="11" FontFamily="Verdana" Height="30" Foreground="#FFDDDDDD"   ></Label>
-            <Label Content="bla" FontSize="11" FontFamily="Verdana" Height="30" Foreground="#FFDDDDDD"></Label>
-            <Label Content="bla" FontSize="11" FontFamily="Verdana" Height="30" Foreground="#FFDDDDDD"></Label>
-        </StackPanel>
+        <TextBlock HorizontalAlignment="Left" Margin="275,21,0,0" TextWrapping="Wrap" Text="{Binding Helpik}" VerticalAlignment="Top" Height="40" Width="129" Foreground="White" FontSize="22" Name="hint"/>
 
-
-        <StackPanel HorizontalAlignment="Left" Height="90" Margin="1193,260,0,0" VerticalAlignment="Top" Width="184" >
-            <Label Content="narozeniny, tvpke čau zdravím" FontSize="11" FontFamily="Verdana" Height="30" Foreground="#FFDDDDDD"   ></Label>
-            <Label Content="bla" FontSize="11" FontFamily="Verdana" Height="30" Foreground="#FFDDDDDD"></Label>
-            <Label Content="bla" FontSize="11" FontFamily="Verdana" Height="30" Foreground="#FFDDDDDD"></Label>
-        </StackPanel>
-        <StackPanel HorizontalAlignment="Left" Height="90" Margin="10,401,0,0" VerticalAlignment="Top" Width="184" >
-            <Label Content="narozeniny, tvpke čau zdravím" FontSize="11" FontFamily="Verdana" Height="30" Foreground="#FFDDDDDD"   ></Label>
-            <Label Content="bla" FontSize="11" FontFamily="Verdana" Height="30" Foreground="#FFDDDDDD"></Label>
-            <Label Content="bla" FontSize="11" FontFamily="Verdana" Height="30" Foreground="#FFDDDDDD"></Label>
-        </StackPanel>
-        <StackPanel HorizontalAlignment="Left" Height="90" Margin="209,401,0,0" VerticalAlignment="Top" Width="184" >
-            <Label Content="narozeniny, tvpke čau zdravím" FontSize="11" FontFamily="Verdana" Height="30" Foreground="#FFDDDDDD"   ></Label>
-            <Label Content="bla" FontSize="11" FontFamily="Verdana" Height="30" Foreground="#FFDDDDDD"></Label>
-            <Label Content="bla" FontSize="11" FontFamily="Verdana" Height="30" Foreground="#FFDDDDDD"></Label>
-        </StackPanel>
-        <StackPanel HorizontalAlignment="Left" Height="90" Margin="407,401,0,0" VerticalAlignment="Top" Width="184" >
-            <Label Content="narozeniny, tvpke čau zdravím" FontSize="11" FontFamily="Verdana" Height="30" Foreground="#FFDDDDDD"   ></Label>
-            <Label Content="bla" FontSize="11" FontFamily="Verdana" Height="30" Foreground="#FFDDDDDD"></Label>
-            <Label Content="bla" FontSize="11" FontFamily="Verdana" Height="30" Foreground="#FFDDDDDD"></Label>
-        </StackPanel>
-        <StackPanel HorizontalAlignment="Left" Height="90" Margin="602,401,0,0" VerticalAlignment="Top" Width="184" >
-            <Label Content="narozeniny, tvpke čau zdravím" FontSize="11" FontFamily="Verdana" Height="30" Foreground="#FFDDDDDD"   ></Label>
-            <Label Content="bla" FontSize="11" FontFamily="Verdana" Height="30" Foreground="#FFDDDDDD"></Label>
-            <Label Content="bla" FontSize="11" FontFamily="Verdana" Height="30" Foreground="#FFDDDDDD"></Label>
-        </StackPanel>
-        <StackPanel HorizontalAlignment="Left" Height="90" Margin="799,401,0,0" VerticalAlignment="Top" Width="184" >
-            <Label Content="narozeniny, tvpke čau zdravím" FontSize="11" FontFamily="Verdana" Height="30" Foreground="#FFDDDDDD"   ></Label>
-            <Label Content="bla" FontSize="11" FontFamily="Verdana" Height="30" Foreground="#FFDDDDDD"></Label>
-            <Label Content="bla" FontSize="11" FontFamily="Verdana" Height="30" Foreground="#FFDDDDDD"></Label>
-        </StackPanel>
-        <StackPanel HorizontalAlignment="Left" Height="90" Margin="997,401,0,0" VerticalAlignment="Top" Width="184" >
-            <Label Content="narozeniny, tvpke čau zdravím" FontSize="11" FontFamily="Verdana" Height="30" Foreground="#FFDDDDDD"   ></Label>
-            <Label Content="bla" FontSize="11" FontFamily="Verdana" Height="30" Foreground="#FFDDDDDD"></Label>
-            <Label Content="bla" FontSize="11" FontFamily="Verdana" Height="30" Foreground="#FFDDDDDD"></Label>
-        </StackPanel>
-        <StackPanel HorizontalAlignment="Left" Height="90" Margin="1193,401,0,0" VerticalAlignment="Top" Width="184" >
-            <Label Content="narozeniny, tvpke čau zdravím" FontSize="11" FontFamily="Verdana" Height="30" Foreground="#FFDDDDDD"   ></Label>
-            <Label Content="bla" FontSize="11" FontFamily="Verdana" Height="30" Foreground="#FFDDDDDD"></Label>
-            <Label Content="bla" FontSize="11" FontFamily="Verdana" Height="30" Foreground="#FFDDDDDD"></Label>
-        </StackPanel>
-
-
-        <StackPanel HorizontalAlignment="Left" Height="90" Margin="11,542,0,0" VerticalAlignment="Top" Width="184" >
-            <Label Content="narozeniny, tvpke čau zdravím" FontSize="11" FontFamily="Verdana" Height="30" Foreground="#FFDDDDDD"   ></Label>
-            <Label Content="bla" FontSize="11" FontFamily="Verdana" Height="30" Foreground="#FFDDDDDD"></Label>
-            <Label Content="bla" FontSize="11" FontFamily="Verdana" Height="30" Foreground="#FFDDDDDD"></Label>
-        </StackPanel>
-        <StackPanel HorizontalAlignment="Left" Height="90" Margin="209,542,0,0" VerticalAlignment="Top" Width="184" >
-            <Label Content="narozeniny, tvpke čau zdravím" FontSize="11" FontFamily="Verdana" Height="30" Foreground="#FFDDDDDD"   ></Label>
-            <Label Content="bla" FontSize="11" FontFamily="Verdana" Height="30" Foreground="#FFDDDDDD"></Label>
-            <Label Content="bla" FontSize="11" FontFamily="Verdana" Height="30" Foreground="#FFDDDDDD"></Label>
-        </StackPanel>
-        <StackPanel HorizontalAlignment="Left" Height="90" Margin="407,542,0,0" VerticalAlignment="Top" Width="184" >
-            <Label Content="narozeniny, tvpke čau zdravím" FontSize="11" FontFamily="Verdana" Height="30" Foreground="#FFDDDDDD"   ></Label>
-            <Label Content="bla" FontSize="11" FontFamily="Verdana" Height="30" Foreground="#FFDDDDDD"></Label>
-            <Label Content="bla" FontSize="11" FontFamily="Verdana" Height="30" Foreground="#FFDDDDDD"></Label>
-        </StackPanel>
-        <StackPanel HorizontalAlignment="Left" Height="90" Margin="602,542,0,0" VerticalAlignment="Top" Width="184" >
-            <Label Content="narozeniny, tvpke čau zdravím" FontSize="11" FontFamily="Verdana" Height="30" Foreground="#FFDDDDDD"   ></Label>
-            <Label Content="bla" FontSize="11" FontFamily="Verdana" Height="30" Foreground="#FFDDDDDD"></Label>
-            <Label Content="bla" FontSize="11" FontFamily="Verdana" Height="30" Foreground="#FFDDDDDD"></Label>
-        </StackPanel>
-        <StackPanel HorizontalAlignment="Left" Height="90" Margin="799,542,0,0" VerticalAlignment="Top" Width="184" >
-            <Label Content="narozeniny, tvpke čau zdravím" FontSize="11" FontFamily="Verdana" Height="30" Foreground="#FFDDDDDD"   ></Label>
-            <Label Content="bla" FontSize="11" FontFamily="Verdana" Height="30" Foreground="#FFDDDDDD"></Label>
-            <Label Content="bla" FontSize="11" FontFamily="Verdana" Height="30" Foreground="#FFDDDDDD"></Label>
-        </StackPanel>
-        <StackPanel HorizontalAlignment="Left" Height="90" Margin="997,542,0,0" VerticalAlignment="Top" Width="184" >
-            <Label Content="narozeniny, tvpke čau zdravím" FontSize="11" FontFamily="Verdana" Height="30" Foreground="#FFDDDDDD"   ></Label>
-            <Label Content="bla" FontSize="11" FontFamily="Verdana" Height="30" Foreground="#FFDDDDDD"></Label>
-            <Label Content="bla" FontSize="11" FontFamily="Verdana" Height="30" Foreground="#FFDDDDDD"></Label>
-        </StackPanel>
-        <StackPanel HorizontalAlignment="Left" Height="90" Margin="1193,542,0,0" VerticalAlignment="Top" Width="184" >
-            <Label Content="narozeniny, tvpke čau zdravím" FontSize="11" FontFamily="Verdana" Height="30" Foreground="#FFDDDDDD"   ></Label>
-            <Label Content="bla" FontSize="11" FontFamily="Verdana" Height="30" Foreground="#FFDDDDDD"></Label>
-            <Label Content="bla" FontSize="11" FontFamily="Verdana" Height="30" Foreground="#FFDDDDDD"></Label>
-        </StackPanel>
-
-
-        <StackPanel HorizontalAlignment="Left" Height="90" Margin="11,680,0,0" VerticalAlignment="Top" Width="184" >
-            <Label Content="narozeniny, tvpke čau zdravím" FontSize="11" FontFamily="Verdana" Height="30" Foreground="#FFDDDDDD"   ></Label>
-            <Label Content="bla" FontSize="11" FontFamily="Verdana" Height="30" Foreground="#FFDDDDDD"></Label>
-            <Label Content="bla" FontSize="11" FontFamily="Verdana" Height="30" Foreground="#FFDDDDDD"></Label>
-        </StackPanel>
-        <StackPanel HorizontalAlignment="Left" Height="90" Margin="209,680,0,0" VerticalAlignment="Top" Width="184" >
-            <Label Content="narozeniny, tvpke čau zdravím" FontSize="11" FontFamily="Verdana" Height="30" Foreground="#FFDDDDDD"   ></Label>
-            <Label Content="bla" FontSize="11" FontFamily="Verdana" Height="30" Foreground="#FFDDDDDD"></Label>
-            <Label Content="bla" FontSize="11" FontFamily="Verdana" Height="30" Foreground="#FFDDDDDD"></Label>
-        </StackPanel>
-        <StackPanel HorizontalAlignment="Left" Height="90" Margin="407,680,0,0" VerticalAlignment="Top" Width="184" >
-            <Label Content="narozeniny, tvpke čau zdravím" FontSize="11" FontFamily="Verdana" Height="30" Foreground="#FFDDDDDD"   ></Label>
-            <Label Content="bla" FontSize="11" FontFamily="Verdana" Height="30" Foreground="#FFDDDDDD"></Label>
-            <Label Content="bla" FontSize="11" FontFamily="Verdana" Height="30" Foreground="#FFDDDDDD"></Label>
-        </StackPanel>
-        <StackPanel HorizontalAlignment="Left" Height="90" Margin="602,680,0,0" VerticalAlignment="Top" Width="184" >
-            <Label Content="narozeniny, tvpke čau zdravím" FontSize="11" FontFamily="Verdana" Height="30" Foreground="#FFDDDDDD"   ></Label>
-            <Label Content="bla" FontSize="11" FontFamily="Verdana" Height="30" Foreground="#FFDDDDDD"></Label>
-            <Label Content="bla" FontSize="11" FontFamily="Verdana" Height="30" Foreground="#FFDDDDDD"></Label>
-        </StackPanel>
-        <StackPanel HorizontalAlignment="Left" Height="90" Margin="798,680,0,0" VerticalAlignment="Top" Width="184" >
-            <Label Content="narozeniny, tvpke čau zdravím" FontSize="11" FontFamily="Verdana" Height="30" Foreground="#FFDDDDDD"   ></Label>
-            <Label Content="bla" FontSize="11" FontFamily="Verdana" Height="30" Foreground="#FFDDDDDD"></Label>
-            <Label Content="bla" FontSize="11" FontFamily="Verdana" Height="30" Foreground="#FFDDDDDD"></Label>
-        </StackPanel>
-        <StackPanel HorizontalAlignment="Left" Height="90" Margin="997,680,0,0" VerticalAlignment="Top" Width="184" >
-            <Label Content="narozeniny, tvpke čau zdravím" FontSize="11" FontFamily="Verdana" Height="30" Foreground="#FFDDDDDD"   ></Label>
-            <Label Content="bla" FontSize="11" FontFamily="Verdana" Height="30" Foreground="#FFDDDDDD"></Label>
-            <Label Content="bla" FontSize="11" FontFamily="Verdana" Height="30" Foreground="#FFDDDDDD"></Label>
-        </StackPanel>
-        <StackPanel HorizontalAlignment="Left" Height="90" Margin="1193,680,0,0" VerticalAlignment="Top" Width="184" >
-            <Label Content="narozeniny, tvpke čau zdravím" FontSize="11" FontFamily="Verdana" Height="30" Foreground="#FFDDDDDD"   ></Label>
-            <Label Content="bla" FontSize="11" FontFamily="Verdana" Height="30" Foreground="#FFDDDDDD"></Label>
-            <Label Content="bla" FontSize="11" FontFamily="Verdana" Height="30" Foreground="#FFDDDDDD"></Label>
-        </StackPanel>
-
-
-        <StackPanel HorizontalAlignment="Left" Height="90" Margin="11,820,0,0" VerticalAlignment="Top" Width="184" >
-            <Label Content="narozeniny, tvpke čau zdravím" FontSize="11" FontFamily="Verdana" Height="30" Foreground="#FFDDDDDD"   ></Label>
-            <Label Content="bla" FontSize="11" FontFamily="Verdana" Height="30" Foreground="#FFDDDDDD"></Label>
-            <Label Content="bla" FontSize="11" FontFamily="Verdana" Height="30" Foreground="#FFDDDDDD"></Label>
-        </StackPanel>
-        <StackPanel HorizontalAlignment="Left" Height="90" Margin="209,820,0,0" VerticalAlignment="Top" Width="184" >
-            <Label Content="narozeniny, tvpke čau zdravím" FontSize="11" FontFamily="Verdana" Height="30" Foreground="#FFDDDDDD"   ></Label>
-            <Label Content="bla" FontSize="11" FontFamily="Verdana" Height="30" Foreground="#FFDDDDDD"></Label>
-            <Label Content="bla" FontSize="11" FontFamily="Verdana" Height="30" Foreground="#FFDDDDDD"></Label>
-        </StackPanel>
-        <StackPanel HorizontalAlignment="Left" Height="90" Margin="407,820,0,0" VerticalAlignment="Top" Width="184" >
-            <Label Content="narozeniny, tvpke čau zdravím" FontSize="11" FontFamily="Verdana" Height="30" Foreground="#FFDDDDDD"   ></Label>
-            <Label Content="bla" FontSize="11" FontFamily="Verdana" Height="30" Foreground="#FFDDDDDD"></Label>
-            <Label Content="bla" FontSize="11" FontFamily="Verdana" Height="30" Foreground="#FFDDDDDD"></Label>
-        </StackPanel>
-        <StackPanel HorizontalAlignment="Left" Height="90" Margin="602,820,0,0" VerticalAlignment="Top" Width="184" >
-            <Label Content="narozeniny, tvpke čau zdravím" FontSize="11" FontFamily="Verdana" Height="30" Foreground="#FFDDDDDD"   ></Label>
-            <Label Content="bla" FontSize="11" FontFamily="Verdana" Height="30" Foreground="#FFDDDDDD"></Label>
-            <Label Content="bla" FontSize="11" FontFamily="Verdana" Height="30" Foreground="#FFDDDDDD"></Label>
-        </StackPanel>
-        <StackPanel HorizontalAlignment="Left" Height="90" Margin="799,820,0,0" VerticalAlignment="Top" Width="184" >
-            <Label Content="narozeniny, tvpke čau zdravím" FontSize="11" FontFamily="Verdana" Height="30" Foreground="#FFDDDDDD"   ></Label>
-            <Label Content="bla" FontSize="11" FontFamily="Verdana" Height="30" Foreground="#FFDDDDDD"></Label>
-            <Label Content="bla" FontSize="11" FontFamily="Verdana" Height="30" Foreground="#FFDDDDDD"></Label>
-        </StackPanel>
-        <StackPanel HorizontalAlignment="Left" Height="90" Margin="997,820,0,0" VerticalAlignment="Top" Width="184" >
-            <Label Content="narozeniny, tvpke čau zdravím" FontSize="11" FontFamily="Verdana" Height="30" Foreground="#FFDDDDDD"   ></Label>
-            <Label Content="bla" FontSize="11" FontFamily="Verdana" Height="30" Foreground="#FFDDDDDD"></Label>
-            <Label Content="bla" FontSize="11" FontFamily="Verdana" Height="30" Foreground="#FFDDDDDD"></Label>
-        </StackPanel>
-        <StackPanel HorizontalAlignment="Left" Height="90" Margin="1193,820,0,0" VerticalAlignment="Top" Width="184" >
-            <Label Content="narozeniny, tvpke čau zdravím" FontSize="11" FontFamily="Verdana" Height="30" Foreground="#FFDDDDDD"   ></Label>
-            <Label Content="bla" FontSize="11" FontFamily="Verdana" Height="30" Foreground="#FFDDDDDD"></Label>
-            <Label Content="bla" FontSize="11" FontFamily="Verdana" Height="30" Foreground="#FFDDDDDD"></Label>
-        </StackPanel>
+        <Button  HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="65" Height="65" Background="Black" Click="Button_Click">
+            <StackPanel>
+                <Image Source="list (2).png"  Stretch="Fill"  Height="60" Width="60"/>
+            </StackPanel>
+        </Button>
     </Grid>
 
 </Window>

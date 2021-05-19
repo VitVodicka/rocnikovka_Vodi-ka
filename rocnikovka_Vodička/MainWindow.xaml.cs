@@ -42,6 +42,7 @@ namespace rocnikovka_Vodička
                 log.AddingRemark(upominka.Text, podrobnosti.Text, dateInput.SelectedDate, "hard");
             }
             this.Close();//po přidání upomínky, zavře se okno
+            podrobnosti.Text = log.TodayNowDate.ToString();
         }
     }
 }
