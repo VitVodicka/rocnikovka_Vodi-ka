@@ -1,10 +1,11 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
+using System.IO;
 
 namespace rocnikovka_Vodička
 {
@@ -187,5 +188,43 @@ namespace rocnikovka_Vodička
             string pocetDni = rok[mesicCislo * 2];
             return int.Parse(pocetDni);// odečte se a přičte se 1, kvůli rozdílu v datumu a listu
         }
+        
+        public void Save(login lo){//vytvořit soubor
+            
+        using (StreamWriter sw = new StreamWriter(@"soubor.txt", true))
+        {
+        sw.WriteLine(lo.Prezdivka.toString());
+        sw.WriteLine(lo.Mail.toString());
+        sw.WriteLine(lo.Heslo.toString());
+        sw.Flush();
+        }
+        }
+        public List<> Load(){
+            
+        int counter = 0;
+        int counter2 = counter -3;
+        int i = 0;
+            
+        using (StreamReader sr = new StreamReader(@"soubor.txt"))
+        {
+        List<string> list = new List<string>();    
+        string s;
+            
+        while ((s = sr.ReadLine()) != null)
+        {
+            counter +=1;
+            Console.WriteLine(s);
+        }
+        while ((s = sr.ReadLine()) != null)
+        {
+            i+=1;
+            if(counter2 ==i){
+            list.Add(s);
+            }
+        }
+          return List;  
+            
+        }
+}
     }
 }
