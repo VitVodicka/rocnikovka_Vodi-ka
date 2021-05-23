@@ -23,5 +23,17 @@ namespace rocnikovka_Vodička
         {
             InitializeComponent();
         }
+        private void ButtonOdstraneni(object sender, RoutedEventArgs e)
+        {
+            Button clickedButton = (Button)sender;  
+            string nazev = clickedButton.Name;
+            String posledni_slova = nazev.Substring(nazev.Length - 2);
+            string textnazev= "text"+posledni_nazev;
+            Textbox ty =(Textbox)textnazev;
+            ty.Text ="";
+            clickedButton.Visibility = Visibility.Hidden;
+
+        }
     }
+
 }
