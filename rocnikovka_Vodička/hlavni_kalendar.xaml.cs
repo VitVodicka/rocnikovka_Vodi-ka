@@ -26,6 +26,7 @@ namespace rocnikovka_Vodička
             InitializeComponent();
             DataContext = log;
             log.SettingDays(mesicnidatum.Text);
+            ZviditelnujTlacitka();
         }
 
 
@@ -33,11 +34,13 @@ namespace rocnikovka_Vodička
         {
             log.DatumOdebrani();//po zmáčknutí tlačítka plus se spustí funkce DatumOdebrani, která odečte z celkového datumu 1 měsíc
             hint.Text = mesicnidatum.Text;
+            ZviditelnujTlacitka();
         }
 
         private void KalendarPlus(object sender, RoutedEventArgs e)
         {
             log.DatumPridani();//po zmáčknutí tlačítka mínus se spustí funkce DatumPridani, která přičte k celkového datumu 1 měsíc
+            ZviditelnujTlacitka();
         }
         public void ZviditelnujTlacitka()
         {
@@ -61,7 +64,7 @@ namespace rocnikovka_Vodička
         }
 
 
-        private void Button1_Click(object sender, RoutedEventArgs e)
+        private void Button_Click(object sender, RoutedEventArgs e)
         {
             //int datumDen = int.Parse(((Button)sender).Content.ToString());
             //int datumDen = int.Parse(((Button)sender).Content.ToString());
@@ -78,5 +81,15 @@ namespace rocnikovka_Vodička
             MainWindow ma = new MainWindow();
             ma.Show();
         }
-    }
+        
+        /*private void Button_Click(object sender, RoutedEventArgs e)
+		{
+			string contentik = ((Button)sender).Content.ToString(); 
+		}*/
+        private void Button_Click3(object sender, RoutedEventArgs e)
+		{
+			pripominky pr = new pripominky();
+			pr.Show();
+		}
+	}
 }

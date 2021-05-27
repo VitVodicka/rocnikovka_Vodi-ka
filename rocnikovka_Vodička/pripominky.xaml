@@ -6,24 +6,211 @@
         xmlns:local="clr-namespace:rocnikovka_Vodička"
         mc:Ignorable="d"
         Title="pripominky" Height="450" Width="800">
-    <Grid>
-        <TabControl HorizontalAlignment="Center" Height="411" Margin="10,0,0,0" VerticalAlignment="Top" Width="774" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">
-            <TabItem Header="!" FontSize="36" Foreground="#FF31CB00" Margin="0,0,0,0">
-                <Grid Background="#FFE5E5E5">
+    <Grid Background="Black">
+        <TabControl HorizontalAlignment="Center" Height="411" Margin="10,0,10,10" VerticalAlignment="Top" Width="774" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" >
+            <TabControl.Resources>
+                <Style TargetType="{x:Type TabPanel}">
+                    <Setter Property="HorizontalAlignment" Value="Center"></Setter>
+                </Style>
+            </TabControl.Resources>
+            <TabItem Header="!" FontSize="36" Foreground="#FF31CB00"  Width="60" Margin="0,2,0,0" >
+                <Grid Background="White">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="71*"/>
                         <ColumnDefinition Width="263*"/>
                     </Grid.ColumnDefinitions>
+                    <Button  HorizontalAlignment="Left" Margin="10,3,0,0" VerticalAlignment="Top" Width="20" Height="20" BorderBrush="#FF49E01C" Background="White" BorderThickness="2" Name="Button01" Click="ButtonOdstraneni"/>
+                    <Button  HorizontalAlignment="Left" Margin="10,78,0,0" VerticalAlignment="Top" Width="20" Height="20" BorderBrush="#FF49E01C" Background="White" BorderThickness="2" Name="Button04" Click="ButtonOdstraneni"/>
+                    <Button  HorizontalAlignment="Left" Margin="10,128,0,0" VerticalAlignment="Top" Width="20" Height="20" BorderBrush="#FF49E01C" Background="White" BorderThickness="2" Name="Button06" Click="ButtonOdstraneni"/>
+                    <Button  HorizontalAlignment="Left" Margin="10,253,0,0" VerticalAlignment="Top" Width="20" Height="20" BorderBrush="#FF49E01C" Background="White" BorderThickness="2" Name="Button11" Click="ButtonOdstraneni" ></Button>
+                    <Button  HorizontalAlignment="Left" Margin="10,178,0,0" VerticalAlignment="Top" Width="20" Height="20" BorderBrush="#FF49E01C" Background="White" BorderThickness="2" Name="Button08" Click="ButtonOdstraneni"/>
+                    <Button  HorizontalAlignment="Left" VerticalAlignment="Top" Width="20" Height="20" Margin="10,153,0,0" BorderBrush="#FF49E01C" Background="White" BorderThickness="2" Name="Button07" Click="ButtonOdstraneni"/>
+                    <Button  HorizontalAlignment="Left" Margin="10,203,0,0" VerticalAlignment="Top" Width="20" Height="20" BorderBrush="#FF49E01C" Background="White" BorderThickness="2" Name="Button09" Click="ButtonOdstraneni"/>
+                    <Button  HorizontalAlignment="Left" Margin="10,228,0,0" VerticalAlignment="Top" Width="20" Height="20" BorderBrush="#FF49E01C" Background="White" BorderThickness="2" Name="Button10" Click="ButtonOdstraneni"/>
+                    <Button  HorizontalAlignment="Left" Margin="10,278,0,0" VerticalAlignment="Top" Width="20" Height="20" BorderBrush="#FF49E01C" Background="White" BorderThickness="2" Name="Button12" Click="ButtonOdstraneni"/>
+                    <Button  HorizontalAlignment="Left" Margin="10,303,0,0" VerticalAlignment="Top" Width="20" Height="20" BorderBrush="#FF49E01C" Background="White" BorderThickness="2" Name="Button13" Click="ButtonOdstraneni"/>
+                    <Button  HorizontalAlignment="Left" Margin="10,328,0,0" VerticalAlignment="Top" Width="20" Height="20" BorderBrush="#FF49E01C" Background="White" BorderThickness="2" Name="Button14" Click="ButtonOdstraneni"/>
+                    <Button  HorizontalAlignment="Left" Margin="10,103,0,0" VerticalAlignment="Top" Width="20" Height="20" BorderBrush="#FF49E01C" Background="White" BorderThickness="2" Name="Button05" Click="ButtonOdstraneni"/>
+                    <Button  HorizontalAlignment="Left" Margin="10,53,0,0" VerticalAlignment="Top" Width="20" Height="20" BorderBrush="#FF49E01C" Background="White" BorderThickness="2" Name="Button03" Click="ButtonOdstraneni"/>
+                    <Button  HorizontalAlignment="Left" Margin="10,28,0,0" VerticalAlignment="Top" Width="20" Height="20" BorderBrush="#FF49E01C" Background="White" BorderThickness="2" Name="Button02" Click="ButtonOdstraneni"></Button>
+
+                    <Button  HorizontalAlignment="Left" Margin="217,3,0,0" VerticalAlignment="Top" Width="20" Height="20" Grid.Column="1" BorderBrush="#FF49E01C" Background="White" BorderThickness="2" Name="Button15" Click="ButtonOdstraneni"/>
+                    <Button  HorizontalAlignment="Left" Margin="217,28,0,0" VerticalAlignment="Top" Width="20" Height="20" Grid.Column="1" BorderBrush="#FF49E01C" Background="White" BorderThickness="2" Name="Button16" Click="ButtonOdstraneni"/>
+                    <Button  HorizontalAlignment="Left" Margin="217,53,0,0" VerticalAlignment="Top" Width="20" Height="20" Grid.Column="1" BorderBrush="#FF49E01C" Background="White" BorderThickness="2" Name="Button17" Click="ButtonOdstraneni"/>
+                    <Button  HorizontalAlignment="Left" Margin="217,78,0,0" VerticalAlignment="Top" Width="20" Height="20" Grid.Column="1" BorderBrush="#FF49E01C" Background="White" BorderThickness="2" Name="Button18" Click="ButtonOdstraneni"/>
+                    <Button  HorizontalAlignment="Left" Margin="217,103,0,0" VerticalAlignment="Top" Width="20" Height="20" Grid.Column="1" BorderBrush="#FF49E01C" Background="White" BorderThickness="2" Name="Button19" Click="ButtonOdstraneni"/>
+                    <Button  HorizontalAlignment="Left" Margin="217,128,0,0" VerticalAlignment="Top" Width="20" Height="20" Grid.Column="1" BorderBrush="#FF49E01C" Background="White" BorderThickness="2" Name="Button20" Click="ButtonOdstraneni"/>
+                    <Button  HorizontalAlignment="Left" Margin="217,153,0,0" VerticalAlignment="Top" Width="20" Height="20" Grid.Column="1" BorderBrush="#FF49E01C" Background="White" BorderThickness="2" Name="Button21" Click="ButtonOdstraneni"/>
+                    <Button  HorizontalAlignment="Left" Margin="217,178,0,0" VerticalAlignment="Top" Width="20" Height="20" Grid.Column="1" BorderBrush="#FF49E01C" Background="White" BorderThickness="2" Name="Button22" Click="ButtonOdstraneni"/>
+                    <Button  HorizontalAlignment="Left"  Margin="217,203,0,0" VerticalAlignment="Top" Width="20" Height="20" Grid.Column="1" BorderBrush="#FF49E01C" Background="White" BorderThickness="2" Name="Button23" Click="ButtonOdstraneni"/>
+                    <Button  HorizontalAlignment="Left" Margin="217,228,0,0" VerticalAlignment="Top" Width="20" Height="20" Grid.Column="1" BorderBrush="#FF49E01C" Background="White" BorderThickness="2" Name="Button24" Click="ButtonOdstraneni"/>
+                    <Button  HorizontalAlignment="Left" Margin="217,253,0,0" VerticalAlignment="Top" Width="20" Height="20" Grid.Column="1" BorderBrush="#FF49E01C" Background="White" BorderThickness="2" Name="Button25" Click="ButtonOdstraneni"/>
+                    <Button  HorizontalAlignment="Left" Margin="217,278,0,0" VerticalAlignment="Top" Width="20" Height="20" Grid.Column="1" BorderBrush="#FF49E01C" Background="White" BorderThickness="2" Name="Button26" Click="ButtonOdstraneni"/>
+                    <Button  HorizontalAlignment="Left" Margin="217,303,0,0" VerticalAlignment="Top" Width="20" Height="20" Grid.Column="1" BorderBrush="#FF49E01C" Background="White" BorderThickness="2" Name="Button27" Click="ButtonOdstraneni"/>
+                    <Button  HorizontalAlignment="Left" Margin="217,328,0,0" VerticalAlignment="Top" Width="20" Height="20" Grid.Column="1" BorderBrush="#FF49E01C" Background="White" BorderThickness="2" Name="Button28" Click="ButtonOdstraneni"/>
+
+                    <TextBlock HorizontalAlignment="Left" Margin="35,3,0,0" TextWrapping="Wrap" Text="123456789123456789123456789123456789123456789" VerticalAlignment="Top" Height="20" Grid.ColumnSpan="2" Width="340" FontSize="14" Foreground="Black" Name="text01"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="35,28,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="20" Grid.ColumnSpan="2" Width="340" FontSize="13" Foreground="Black" Name="text02"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="35,53,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="20" Grid.ColumnSpan="2" Width="340" FontSize="13" Foreground="Black" Name="text03"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="35,78,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="20" Grid.ColumnSpan="2" Width="340" FontSize="13" Foreground="Black" Name="text04"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="35,103,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="20" Grid.ColumnSpan="2" Width="340" FontSize="13" Foreground="Black" Name="text05"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="35,128,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="20" Grid.ColumnSpan="2" Width="340" FontSize="13" Foreground="Black" Name="text06"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="35,153,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="20" Grid.ColumnSpan="2" Width="340" FontSize="13" Foreground="Black" Name="text07"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="35,178,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="20" Grid.ColumnSpan="2" Width="340" FontSize="13" Foreground="Black" Name="text08"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="35,203,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="20" Grid.ColumnSpan="2" Width="340" FontSize="13" Foreground="Black" Name="text09"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="35,228,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="20" Grid.ColumnSpan="2" Width="340" FontSize="13" Foreground="Black" Name="text10"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="35,253,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="20" Grid.ColumnSpan="2" Width="340" FontSize="13" Foreground="Black" Name="text11"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="35,278,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="20" Grid.ColumnSpan="2" Width="340" FontSize="13" Foreground="Black" Name="text12"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="35,303,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="20" Grid.ColumnSpan="2" Width="340" FontSize="13" Foreground="Black" Name="text13"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="35,328,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="20" Grid.ColumnSpan="2" Width="340" FontSize="13" Foreground="Black" Name="text14"/>
+
+                    <TextBlock HorizontalAlignment="Left" Margin="242,3,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="20" Width="340" FontSize="14" Foreground="Black" Grid.Column="1" Name="text15"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="242,28,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="20" Width="340" FontSize="13" Foreground="Black" Grid.Column="1" Name="text16"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="242,53,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="20" Width="340" FontSize="13" Foreground="Black" Grid.Column="1" Name="text17"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="242,78,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="20" Width="340" FontSize="13" Foreground="Black" Grid.Column="1" Name="text18"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="242,103,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="20" Width="340" FontSize="13" Foreground="Black" Grid.Column="1" Name="text19"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="242,153,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="20" Width="340" FontSize="13" Foreground="Black" Grid.Column="1" Name="text21"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="242,203,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="20" Width="340" FontSize="13" Foreground="Black" Grid.Column="1" Name="text23"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="242,128,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="20" Width="340" FontSize="13" Foreground="Black" Grid.Column="1" Name="text20"/>
+
+                    <TextBlock HorizontalAlignment="Left" Margin="242,178,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="20" Width="340" FontSize="13" Foreground="Black" Grid.Column="1" Name="text22"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="242,228,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="20" Width="340" FontSize="13" Foreground="Black" Grid.Column="1" Name="text24"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="242,253,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="20" Width="340" FontSize="13" Foreground="Black" Grid.Column="1" Name="text25"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="242,278,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="20" Width="340" FontSize="13" Foreground="Black" Grid.Column="1" Name="text26"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="242,328,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="20" Width="340" FontSize="13" Foreground="Black" Grid.Column="1" Name="text27"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="242,303,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="20" Width="340" FontSize="13" Foreground="Black" Grid.Column="1" Name="text28"/>
                 </Grid>
             </TabItem>
-            <TabItem Header="!!" FontSize="36" Foreground="#FFFDE74C" Margin="343,0,-350,0">
-                <Grid Background="#FFE5E5E5" Margin="0,-3,0,3"/>
+            <TabItem Header="!!" FontSize="36" Foreground="#FE5F00" Width="60" Margin="0,2,0,0" >
+                <Grid Background="White" Margin="0,-3,0,3">
+                    <Button  HorizontalAlignment="Left" Margin="10,3,0,0" VerticalAlignment="Top" Width="20" Height="20" Background="White" BorderThickness="2" BorderBrush="#FE5F00" Name="Button29"/>
+                    <Button  HorizontalAlignment="Left" Margin="10,78,0,0" VerticalAlignment="Top" Width="20" Height="20" BorderBrush="#FE5F00" Background="White" BorderThickness="2" Name="Button32"/>
+                    <Button  HorizontalAlignment="Left" Margin="10,128,0,0" VerticalAlignment="Top" Width="20" Height="20" BorderBrush="#FE5F00" Background="White" BorderThickness="2" Name="Button34"/>
+                    <Button  HorizontalAlignment="Left" Margin="10,253,0,0" VerticalAlignment="Top" Width="20" Height="20" BorderBrush="#FE5F00" Background="White" BorderThickness="2" Name="Button39"></Button>
+                    <Button  HorizontalAlignment="Left" Margin="10,178,0,0" VerticalAlignment="Top" Width="20" Height="20" BorderBrush="#FE5F00" Background="White" BorderThickness="2" Name="Button36"/>
+                    <Button  HorizontalAlignment="Left" VerticalAlignment="Top" Width="20" Height="20" Margin="10,153,0,0" BorderBrush="#FE5F00" Background="White" BorderThickness="2" Name="Button35"/>
+                    <Button  HorizontalAlignment="Left" Margin="10,203,0,0" VerticalAlignment="Top" Width="20" Height="20" BorderBrush="#FE5F00" Background="White" BorderThickness="2" Name="Button37"/>
+                    <Button  HorizontalAlignment="Left" Margin="10,228,0,0" VerticalAlignment="Top" Width="20" Height="20" BorderBrush="#FE5F00" Background="White" BorderThickness="2" Name="Button38"/>
+                    <Button  HorizontalAlignment="Left" Margin="10,278,0,0" VerticalAlignment="Top" Width="20" Height="20" BorderBrush="#FE5F00" Background="White" BorderThickness="2" Name="Button40"/>
+                    <Button  HorizontalAlignment="Left" Margin="10,303,0,0" VerticalAlignment="Top" Width="20" Height="20" BorderBrush="#FE5F00" Background="White" BorderThickness="2" Name="Button41"/>
+                    <Button  HorizontalAlignment="Left" Margin="10,328,0,0" VerticalAlignment="Top" Width="20" Height="20" BorderBrush="#FE5F00" Background="White" BorderThickness="2" Name="Button42"/>
+                    <Button  HorizontalAlignment="Left" Margin="10,103,0,0" VerticalAlignment="Top" Width="20" Height="20" BorderBrush="#FE5F00" Background="White" BorderThickness="2" Name="Button33"/>
+                    <Button  HorizontalAlignment="Left" Margin="10,53,0,0" VerticalAlignment="Top" Width="20" Height="20" BorderBrush="#FE5F00" Background="White" BorderThickness="2" Name="Button31"/>
+                    <Button  HorizontalAlignment="Left" Margin="10,28,0,0" VerticalAlignment="Top" Width="20" Height="20" BorderBrush="#FE5F00" Background="White" BorderThickness="2" Name="Button30"/>
+
+                    <TextBlock HorizontalAlignment="Left" Margin="35,28,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="20" Grid.ColumnSpan="2" Width="340" FontSize="13" Foreground="Black" Name="text30"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="35,53,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="20" Grid.ColumnSpan="2" Width="340" FontSize="13" Foreground="Black" Name="text31"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="35,78,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="20" Grid.ColumnSpan="2" Width="340" FontSize="13" Foreground="Black" Name="text32"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="35,103,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="20" Grid.ColumnSpan="2" Width="340" FontSize="13" Foreground="Black" Name="text33"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="35,128,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="20" Grid.ColumnSpan="2" Width="340" FontSize="13" Foreground="Black" Name="text34"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="35,153,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="20" Grid.ColumnSpan="2" Width="340" FontSize="13" Foreground="Black" Name="text35"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="35,178,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="20" Grid.ColumnSpan="2" Width="340" FontSize="13" Foreground="Black" Name="text36"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="35,203,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="20" Grid.ColumnSpan="2" Width="340" FontSize="13" Foreground="Black" Name="text37"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="35,228,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="20" Grid.ColumnSpan="2" Width="340" FontSize="13" Foreground="Black" Name="text38"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="35,253,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="20" Grid.ColumnSpan="2" Width="340" FontSize="13" Foreground="Black" Name="text39"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="35,278,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="20" Grid.ColumnSpan="2" Width="340" FontSize="13" Foreground="Black" Name="text40"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="35,303,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="20" Grid.ColumnSpan="2" Width="340" FontSize="13" Foreground="Black" Name="text41"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="35,328,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="20" Grid.ColumnSpan="2" Width="340" FontSize="13" Foreground="Black" Name="text42"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="35,3,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="20" Width="340" FontSize="13" Foreground="Black" Name="text29"/>
+
+                    <Button  HorizontalAlignment="Left" Margin="380,3,0,0" VerticalAlignment="Top" Width="20" Height="20" BorderBrush="#FE5F00" Background="White" BorderThickness="2" Name="Button43"/>
+                    <Button  HorizontalAlignment="Left" Margin="380,28,0,0" VerticalAlignment="Top" Width="20" Height="20" BorderBrush="#FE5F00" Background="White" BorderThickness="2" Name="Button44"/>
+                    <Button  HorizontalAlignment="Left" Margin="380,53,0,0" VerticalAlignment="Top" Width="20" Height="20" BorderBrush="#FE5F00" Background="White" BorderThickness="2" Name="Button45"/>
+                    <Button  HorizontalAlignment="Left" Margin="380,78,0,0" VerticalAlignment="Top" Width="20" Height="20" BorderBrush="#FE5F00" Background="White" BorderThickness="2" Name="Button46"/>
+                    <Button  HorizontalAlignment="Left" Margin="380,103,0,0" VerticalAlignment="Top" Width="20" Height="20" BorderBrush="#FE5F00" Background="White" BorderThickness="2" Name="Button47"/>
+                    <Button  HorizontalAlignment="Left" Margin="380,128,0,0" VerticalAlignment="Top" Width="20" Height="20" BorderBrush="#FE5F00" Background="White" BorderThickness="2" Name="Button48"/>
+                    <Button  HorizontalAlignment="Left" Margin="380,153,0,0" VerticalAlignment="Top" Width="20" Height="20" BorderBrush="#FE5F00" Background="White" BorderThickness="2" Name="Button49"/>
+                    <Button  HorizontalAlignment="Left" Margin="380,178,0,0" VerticalAlignment="Top" Width="20" Height="20" BorderBrush="#FE5F00" Background="White" BorderThickness="2" Name="Button50"/>
+                    <Button  HorizontalAlignment="Left"  Margin="380,203,0,0" VerticalAlignment="Top" Width="20" Height="20" BorderBrush="#FE5F00" Background="White" BorderThickness="2" Name="Button51"/>
+                    <Button  HorizontalAlignment="Left" Margin="380,228,0,0" VerticalAlignment="Top" Width="20" Height="20" BorderBrush="#FE5F00" Background="White" BorderThickness="2" Name="Button52"/>
+                    <Button  HorizontalAlignment="Left" Margin="380,253,0,0" VerticalAlignment="Top" Width="20" Height="20" BorderBrush="#FE5F00" Background="White" BorderThickness="2" Name="Button53"/>
+                    <Button  HorizontalAlignment="Left" Margin="380,278,0,0" VerticalAlignment="Top" Width="20" Height="20" BorderBrush="#FE5F00" Background="White" BorderThickness="2" Name="Button54" />
+                    <Button  HorizontalAlignment="Left" Margin="380,303,0,0" VerticalAlignment="Top" Width="20" Height="20" BorderBrush="#FE5F00" Background="White" BorderThickness="2" Name="Button55"/>
+                    <Button  HorizontalAlignment="Left" Margin="380,328,0,0" VerticalAlignment="Top" Width="20" Height="20" BorderBrush="#FE5F00" Background="White" BorderThickness="2" Name="Button56"/>
+
+                    <TextBlock HorizontalAlignment="Left" Margin="405,3,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="20" Width="340" FontSize="13" Foreground="Black" Name="text43"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="405,28,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="20" Width="340" FontSize="13" Foreground="Black" Name="text44"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="405,53,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="20" Width="340" FontSize="13" Foreground="Black" Name="text45"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="405,78,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="20" Width="340" FontSize="13" Foreground="Black" Name="text46"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="405,103,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="20" Width="340" FontSize="13" Foreground="Black" Name="text47"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="405,128,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="20" Width="340" FontSize="13" Foreground="Black" Name="text48"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="405,178,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="20" Width="340" FontSize="13" Foreground="Black" Name="text49"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="405,153,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="20" Width="340" FontSize="13" Foreground="Black" Name="text50"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="405,203,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="20" Width="340" FontSize="13" Foreground="Black" Name="text51"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="405,228,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="20" Width="340" FontSize="13" Foreground="Black" Name="text52"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="405,253,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="20" Width="340" FontSize="13" Foreground="Black" Name="text53"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="405,278,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="20" Width="340" FontSize="13" Foreground="Black" Name="text54"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="405,303,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="20" Width="340" FontSize="13" Foreground="Black" Name="text55"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="405,328,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="20" Width="340" FontSize="13" Foreground="Black" Name="text56"/>
+                </Grid>
+
             </TabItem>
-            <TabItem Header="!!!" FontSize="36" Foreground="#FFD00000" Margin="343,0,-350,0">
-                <Grid Background="#FFE5E5E5" Margin="0,-3,0,3"/>
-            </TabItem>
-            <TabItem Header=". . ." FontSize="36" VerticalContentAlignment="Center" Margin="343,0,-350,0">
-                <Grid Background="#FFE5E5E5" Margin="0,-3,0,3"/>
+            <TabItem Header="!!!" FontSize="36" Foreground="#FFD00000" Width="60" Margin="0,2,0,0" >
+                <Grid Background="White" Margin="0,-3,0,3" >
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="193*"/>
+                        <ColumnDefinition Width="191*"/>
+                    </Grid.ColumnDefinitions>
+                    <Button  HorizontalAlignment="Left" Margin="10,3,0,0" VerticalAlignment="Top" Width="20" Height="20" BorderBrush="#FFD00000" Background="White" BorderThickness="2" Name="Button57"/>
+                    <Button  HorizontalAlignment="Left" Margin="10,78,0,0" VerticalAlignment="Top" Width="20" Height="20" BorderBrush="#FFD00000" Background="White" BorderThickness="2" Name="Button60" />
+                    <Button  HorizontalAlignment="Left" Margin="10,128,0,0" VerticalAlignment="Top" Width="20" Height="20" BorderBrush="#FFD00000" Background="White" BorderThickness="2" Name="Button62" />
+                    <Button  HorizontalAlignment="Left" Margin="10,253,0,0" VerticalAlignment="Top" Width="20" Height="20" BorderBrush="#FFD00000" Background="White" BorderThickness="2" Name="Button67"></Button>
+                    <Button  HorizontalAlignment="Left" Margin="10,178,0,0" VerticalAlignment="Top" Width="20" Height="20" BorderBrush="#FFD00000" Background="White" BorderThickness="2" Name="Button64"/>
+                    <Button  HorizontalAlignment="Left" VerticalAlignment="Top" Width="20" Height="20" Margin="10,153,0,0" BorderBrush="#FFD00000" Background="White" BorderThickness="2" Name="Button63"/>
+                    <Button  HorizontalAlignment="Left" Margin="10,203,0,0" VerticalAlignment="Top" Width="20" Height="20" BorderBrush="#FFD00000" Background="White" BorderThickness="2" Name="Button65"/>
+                    <Button  HorizontalAlignment="Left" Margin="10,228,0,0" VerticalAlignment="Top" Width="20" Height="20" BorderBrush="#FFD00000" Background="White" BorderThickness="2" Name="Button66"/>
+                    <Button  HorizontalAlignment="Left" Margin="10,278,0,0" VerticalAlignment="Top" Width="20" Height="20" BorderBrush="#FFD00000" Background="White" BorderThickness="2" Name="Button68"></Button>
+                    <Button  HorizontalAlignment="Left" Margin="10,303,0,28" Width="20" BorderBrush="#FFD00000" Background="White" BorderThickness="2" Name="Button69"/>
+                    <Button  HorizontalAlignment="Left" Margin="10,328,0,0" VerticalAlignment="Top" Width="20" Height="20" BorderBrush="#FFD00000" Background="White" BorderThickness="2" Name="Button70"/>
+                    <Button  HorizontalAlignment="Left" Margin="10,103,0,0" VerticalAlignment="Top" Width="20" Height="20" BorderBrush="#FFD00000" Background="White" BorderThickness="2" Name="Button61"/>
+                    <Button  HorizontalAlignment="Left" Margin="10,53,0,0" VerticalAlignment="Top" Width="20" Height="20" BorderBrush="#FFD00000" Background="White" BorderThickness="2" Name="Button59"/>
+                    <Button  HorizontalAlignment="Left" Margin="10,28,0,0" VerticalAlignment="Top" Width="20" Height="20" BorderBrush="#FFD00000" Background="White" BorderThickness="2" Name="Button58"/>
+
+                    <TextBlock HorizontalAlignment="Left" Margin="35,28,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="20" Width="340" FontSize="13" Foreground="Black" Name="text58"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="35,53,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="20" Width="340" FontSize="13" Foreground="Black" Name="text59"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="35,78,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="20" Width="340" FontSize="13" Foreground="Black" Name="text60"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="35,103,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="20" Width="340" FontSize="13" Foreground="Black" Name="text61"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="35,128,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="20" Width="340" FontSize="13" Foreground="Black" Name="text62"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="35,153,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="20" Width="340" FontSize="13" Foreground="Black" Name="text63"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="35,178,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="20" Width="340" FontSize="13" Foreground="Black" Name="text64"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="35,203,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="20" Width="340" FontSize="13" Foreground="Black" Name="text65"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="35,228,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="20" Width="340" FontSize="13" Foreground="Black" Name="text66"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="35,253,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="20" Width="340" FontSize="13" Foreground="Black" Name="text67" />
+                    <TextBlock HorizontalAlignment="Left" Margin="35,278,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="20" Width="340" FontSize="13" Foreground="Black" Name="text68"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="35,303,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="20" Width="340" FontSize="13" Foreground="Black" Name="text69"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="35,328,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="20" Width="340" FontSize="13" Foreground="Black" Name="text70"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="35,3,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="20" Width="340" FontSize="13" Foreground="Black" Name="text57"/>
+
+                    <Button  HorizontalAlignment="Left" Margin="380,3,0,0" VerticalAlignment="Top" Width="20" Height="20" BorderBrush="#FFD00000" Background="White" BorderThickness="2" Name="Button71" Grid.ColumnSpan="2"/>
+                    <Button  HorizontalAlignment="Left" Margin="380,28,0,0" VerticalAlignment="Top" Width="20" Height="20" BorderBrush="#FFD00000" Background="White" BorderThickness="2" Name="Button72" Grid.ColumnSpan="2"/>
+                    <Button  HorizontalAlignment="Left" Margin="380,53,0,0" VerticalAlignment="Top" Width="20" Height="20" BorderBrush="#FFD00000" Background="White" BorderThickness="2" Name="Button73" Grid.ColumnSpan="2"/>
+                    <Button  HorizontalAlignment="Left" Margin="380,78,0,0" VerticalAlignment="Top" Width="20" Height="20" BorderBrush="#FFD00000" Background="White" BorderThickness="2" Name="Button74" Grid.ColumnSpan="2"/>
+                    <Button  HorizontalAlignment="Left" Margin="380,103,0,0" VerticalAlignment="Top" Width="20" Height="20" BorderBrush="#FFD00000" Background="White" BorderThickness="2" Name="Button75" Grid.ColumnSpan="2"/>
+                    <Button  HorizontalAlignment="Left" Margin="380,128,0,0" VerticalAlignment="Top" Width="20" Height="20" BorderBrush="#FFD00000" Background="White" BorderThickness="2" Name="Button76" Grid.ColumnSpan="2"/>
+                    <Button  HorizontalAlignment="Left" Margin="380,153,0,0" VerticalAlignment="Top" Width="20" Height="20" BorderBrush="#FFD00000" Background="White" BorderThickness="2" Name="Button77" Grid.ColumnSpan="2"/>
+                    <Button  HorizontalAlignment="Left" Margin="380,178,0,0" VerticalAlignment="Top" Width="20" Height="20" BorderBrush="#FFD00000" Background="White" BorderThickness="2" Name="Button78" Grid.ColumnSpan="2"/>
+                    <Button  HorizontalAlignment="Left" Margin="380,203,0,0" VerticalAlignment="Top" Width="20" Height="20" BorderBrush="#FFD00000" Background="White" BorderThickness="2" Name="Button79" Grid.ColumnSpan="2"/>
+                    <Button  HorizontalAlignment="Left" Margin="380,228,0,0" VerticalAlignment="Top" Width="20" Height="20" BorderBrush="#FFD00000" Background="White" BorderThickness="2" Name="Button80" Grid.ColumnSpan="2"/>
+                    <Button  HorizontalAlignment="Left" Margin="380,253,0,0" VerticalAlignment="Top" Width="20" Height="20" BorderBrush="#FFD00000" Background="White" BorderThickness="2" Name="Button81" Grid.ColumnSpan="2"/>
+                    <Button  HorizontalAlignment="Left" Margin="380,278,0,0" VerticalAlignment="Top" Width="20" Height="20" BorderBrush="#FFD00000" Background="White" BorderThickness="2" Name="Button82" Grid.ColumnSpan="2"/>
+                    <Button  HorizontalAlignment="Left" Margin="380,303,0,0" VerticalAlignment="Top" Width="20" Height="20" BorderBrush="#FFD00000" Background="White" BorderThickness="2" Name="Button83" Grid.ColumnSpan="2"/>
+                    <Button  HorizontalAlignment="Left" Margin="380,328,0,0" VerticalAlignment="Top" Width="20" Height="20" BorderBrush="#FFD00000" Background="White" BorderThickness="2" Name="Button84" Grid.ColumnSpan="2"/>
+
+                    <TextBlock HorizontalAlignment="Left" Margin="19,3,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="20" Width="340" FontSize="13" Foreground="Black" Name="text71" Grid.Column="1"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="19,28,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="20" Width="340" FontSize="13" Foreground="Black" Name="text72" Grid.Column="1"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="19,53,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="20" Width="340" FontSize="13" Foreground="Black" Name="text73" Grid.Column="1"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="19,78,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="20" Width="340" FontSize="13" Foreground="Black" Name="text74" Grid.Column="1"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="19,103,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="20" Width="340" FontSize="13" Foreground="Black" Name="text75" Grid.Column="1"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="19,128,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="20" Width="340" FontSize="13" Foreground="Black" Name="text76" Grid.Column="1"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="19,153,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="20" Width="340" FontSize="13" Foreground="Black" Name="text77" Grid.Column="1"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="19,178,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="20" Width="340" FontSize="13" Foreground="Black" Name="text78" Grid.Column="1"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="19,203,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="20" Width="340" FontSize="13" Foreground="Black" Name="text79" Grid.Column="1"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="19,228,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="20" Width="340" FontSize="13" Foreground="Black" Name="text80" Grid.Column="1"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="19,253,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="20" Width="340" FontSize="13" Foreground="Black" Name="text81" Grid.Column="1"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="19,278,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="20" Width="340" FontSize="13" Foreground="Black" Name="text82" Grid.Column="1"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="19,303,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="20" Width="340" FontSize="13" Foreground="Black" Name="text83" Grid.Column="1"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="19,328,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="20" Width="340" FontSize="13" Foreground="Black" Name="text84" Grid.Column="1"/>
+                </Grid>
             </TabItem>
         </TabControl>
     </Grid>

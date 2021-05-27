@@ -1,16 +1,18 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
+using System.IO;
+using System.Collections.ObjectModel;
 
 namespace rocnikovka_Vodička
 {
     class login_details:INotifyPropertyChanged// zde je implementováno rozhraní pro aktualizaci prvků
     {
-        public List<login> listPrihlasovani { get; set; }//list, do kterého se přidávají uživatelské údaje(email, heslo, přezdívka)
+        public ObservableCollection<login> listPrihlasovani { get; set; }//list, do kterého se přidávají uživatelské údaje(email, heslo, přezdívka)
         public List<events> listEvents { get; set; }
         public int Index { get; set; }//meziproměnná s názvem index
         public string Help { get; set; }
@@ -53,15 +55,15 @@ namespace rocnikovka_Vodička
             Helpik = TodayNowDate.ToString();
 
         }
-        public void AddingRemark(string remark, string detail, DateTime? date, string importance)
+        public void AddingRemark(string remark, DateTime? date, string importance)
         {
-            events eventik = new events(remark, detail, date, importance);
+            events eventik = new events(remark, date, importance);
             listEvents.Add(eventik);
         }
 
         public login_details()//v konstruktoru vytvoření listu na přihlašování
         {
-            listPrihlasovani = new List<login>();
+            listPrihlasovani = new ObservableCollection<login>();
             listEvents = new List<events>();
             aktualniDatum = DateTime.Today;
         }
@@ -76,8 +78,10 @@ namespace rocnikovka_Vodička
         }
         public void DatumOdebrani()
         {
+            if (aktualniDatum !=null) { 
             aktualniDatum = aktualniDatum.AddMonths(-1);//odebrání 1 měsíce od datumu
             Zmena("aktualniDatum"); ;//aktualizace proměnné aktuálníDatum
+            }
         }
 
         public void addingToList(string prezdivkaInput, string mailInput, string hesloInput)//přidávání přihlašovacích údajů do listu a aktualizace listu
@@ -86,14 +90,16 @@ namespace rocnikovka_Vodička
             listPrihlasovani.Add(prihlaseni);
 
             Zmena("listPrihlasovani");
-            Zmena("prezdivkaInput");
-            Zmena("mailInput");
-            Zmena("hesloInput");
+            Zmena(prezdivkaInput);
+            Zmena(mailInput);
+            Zmena(hesloInput);
         }
         public void Delete(login log)//odstranění položky z listu pro přihlašování
         {
-            listPrihlasovani.Remove(log);
+            if (listPrihlasovani != null) { 
+            listPrihlasovani.Remove(log); 
             Zmena("listPrihlasovani");
+            }
         }
         public void Comparing(login log)//porovnávání přezdívky nebo mailu s vybraným políčkem jména nebo emailu
         {
@@ -118,6 +124,7 @@ namespace rocnikovka_Vodička
 
         public void Passcheck(string passInput)
         {
+            if((passInput==null) || (listPrihlasovani[Index] != null)) { 
             if (passInput == listPrihlasovani[Index].Heslo)
             {
                 hlavni_kalendar hlavni = new hlavni_kalendar();
@@ -132,6 +139,7 @@ namespace rocnikovka_Vodička
                 Help = "";
                 Zmena("Help");
                 //try a catch
+            }
             }
             //ted jen dodělat checkování popup hesla s list heslem a odbugování pomocí try
         }
@@ -188,4 +196,47 @@ namespace rocnikovka_Vodička
             return int.Parse(pocetDni);// odečte se a přičte se 1, kvůli rozdílu v datumu a listu
         }
     }
+    #region ukladani a otevirani
+    /*public void Save(login lo){
+        try {
+
+            using (StreamWriter sw = new StreamWriter(@"user.txt", true))
+            {
+
+                sw.WriteLine(lo.Prezdivka.ToString());
+                sw.WriteLine(lo.Mail.ToString());
+                sw.WriteLine(lo.Heslo.ToString());
+                sw.Flush();
+            }
+            }
+        catch { }
+    public List<string> Load(){
+
+    int counter = 0;
+    int counter2 = counter -3;
+    int i = 0;
+
+    using (StreamReader sr = new StreamReader(@"user.txt"))
+    {
+    List<string> list = new List<string>();    
+    string s;
+
+    while ((s = sr.ReadLine()) != null)
+    {
+        counter +=1;
+        Console.WriteLine(s);
+    }
+    while ((s = sr.ReadLine()) != null)
+    {
+        i+=1;
+        if(counter2 ==i){
+        list.Add(s);
+        }
+    }
+      return list;  
+
+    }*/
 }
+    #endregion ukladani a otevirani
+
+

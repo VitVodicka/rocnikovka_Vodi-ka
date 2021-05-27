@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:rocnikovka_Vodička"
         mc:Ignorable="d"
-        Title="hlavni_kalendar"  Height="960" Width="1400">
+        Title="hlavni_kalendar"  Height="960" Width="1400" MinHeight="960" MaxHeight="960" MinWidth="1400" MaxWidth="1400" >
     <Grid Background="#FF0C090D" >
 
         <Label Content="Přidání účtu" Grid.Column="0" HorizontalAlignment="Center"  VerticalAlignment="Top" FontFamily="Segoe UI Black" FontSize="36" Width="262" Foreground="White" Margin="390,12,372,0" />
@@ -64,9 +64,9 @@
         <Button Content="+" HorizontalAlignment="Left" Margin="1338,21,0,0" VerticalAlignment="Top" Width="40"  Height="40" Foreground="White" FontSize="24" Background="Black" BorderBrush="White" FontWeight="Bold" BorderThickness="4" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Click="KalendarPlus" >
         </Button>
         <TextBlock TextAlignment="Center"  Margin="987,27,66,0" TextWrapping="Wrap" Text="{Binding aktualniDatum, StringFormat=MM.yyyy}" VerticalAlignment="Top" Height="29" Foreground="White" FontSize="18" FontFamily="Verdana" Name="mesicnidatum" />
-        <TextBlock HorizontalAlignment="Left" Margin="275,21,0,0" TextWrapping="Wrap" Text="{Binding Helpik}" VerticalAlignment="Top" Height="40" Width="129" Foreground="White" FontSize="22" Name="hint"/>
+        <TextBlock HorizontalAlignment="Left" Margin="80,21,0,0" TextWrapping="Wrap" Text="{Binding Helpik}" VerticalAlignment="Top" Height="40" Width="489" Foreground="White" FontSize="26" Name="hint" TextAlignment="Center" FontFamily="Verdana"/>
 
-        <Button  HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="65" Height="65" Background="Black" Click="Button_Click">
+        <Button  HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="65" Height="65" Background="Black" Click="Button_Click3">
             <StackPanel>
                 <Image Source="list (2).png"  Stretch="Fill"  Height="60" Width="60"/>
             </StackPanel>

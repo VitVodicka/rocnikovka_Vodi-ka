@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:rocnikovka_Vodička"
         mc:Ignorable="d"
-        Title="Kalendář" Height="500" Width="700" WindowStartupLocation="CenterScreen" Icon="logo_rocnikovka.png">
+        Title="Kalendář" Height="500" Width="700" MinHeight="500" MaxHeight="500" MinWidth="700" MaxWidth="700" WindowStartupLocation="CenterScreen" Icon="logo_rocnikovka.png">
 
     <Grid Background="Black">
         <Grid.RowDefinitions>
@@ -20,7 +20,7 @@
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
         <Label Content="Přidání události " Grid.Column="0" Grid.ColumnSpan="2" HorizontalAlignment="Center"  VerticalAlignment="Center" FontFamily="Segoe UI Black" FontSize="36" Foreground="White"/>
-        <TextBox HorizontalAlignment="Center" Height="58"  Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" TextWrapping="Wrap" Text="Přidejte název upomínky" VerticalAlignment="Center" Width="674" Background="Black" FontFamily="Verdana" FontSize="22" Foreground="White" TextAlignment="Center" SelectionBrush="White" BorderThickness="3" BorderBrush="White" CaretBrush="White" Name="upominka"/>
+        <TextBox HorizontalAlignment="Center" Height="36"  Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" TextWrapping="Wrap" Text="12345678912345678912345678912345678912345678912" VerticalAlignment="Center" Width="646" Background="Black" FontFamily="Verdana" FontSize="22" Foreground="White" TextAlignment="Center" SelectionBrush="White" BorderThickness="3" BorderBrush="White" CaretBrush="White" Name="upominka" />
         <DatePicker HorizontalAlignment="Center" Margin="50,15,71,6" Grid.Row="2" VerticalAlignment="Center" Width="226" Height="136" Background="White" Name="dateInput" DisplayDate="{Binding TodayNowDate, Mode=OneTime}">
             <DatePicker.BorderBrush>
                 <LinearGradientBrush EndPoint="0.5,0" StartPoint="0.5,1">
@@ -30,17 +30,16 @@
                 </LinearGradientBrush>
             </DatePicker.BorderBrush>
         </DatePicker>
-        <TextBox HorizontalAlignment="Left" Height="137" Margin="10,10,0,0" Grid.Row="2" Grid.Column="1" TextWrapping="Wrap" Text="Přidejte podrobnosti" VerticalAlignment="Top" Width="327" Background="Black" FontFamily="Verdana" FontSize="18" Foreground="White" SelectionBrush="White" BorderThickness="3" BorderBrush="White" Name="podrobnosti"/>
         <Label Content="Důležitost"  Margin="10,2,0,0" Grid.Row="4" VerticalAlignment="Top" Width="141" FontFamily="Verdana" HorizontalAlignment="Center" FontSize="16"/>
-        <Button Content="OK" Grid.Column="1" HorizontalAlignment="Center"  Grid.Row="3" VerticalAlignment="Center" Width="120" Click="Button_Click" Height="60" FontFamily="Verdana" FontSize="18" Foreground="White" BorderBrush="White" Background="Black" BorderThickness="3"/>
-        <StackPanel Height="39" Margin="10,31,10,0" Grid.Row="4" VerticalAlignment="Top" Grid.Column="0" Orientation="Horizontal" >
-            <Label Content="!" FontSize="24" FontFamily="Verdana" Margin="30,0,0,0" Foreground="#FF31CB00" FontWeight="Bold"></Label>
-            <Label Content="!!" FontSize="24" FontFamily="Verdana"  Margin="80,00,00,00" Foreground="#FDE74C" FontWeight="Bold"></Label>
-            <Label Content="!!!" FontSize="24" FontFamily="Verdana" HorizontalContentAlignment="Right" Margin="80,0,0,0" Foreground="#D00000" FontWeight="Bold"></Label>
+        <Button Content="OK" Grid.Column="0" HorizontalAlignment="Center"  Grid.Row="3" VerticalAlignment="Center" Width="120" Click="Button_Click" Height="60" FontFamily="Verdana" FontSize="18" Foreground="White" BorderBrush="White" Background="Black" BorderThickness="3" Grid.ColumnSpan="2" />
+        <StackPanel Height="39" Margin="10,15,10,0" Grid.Row="2" VerticalAlignment="Top" Grid.Column="1" Orientation="Horizontal" >
+            <Label Content="!" FontSize="25" FontFamily="Verdana" Margin="30,0,0,0" Foreground="#FF31CB00" FontWeight="Bold"></Label>
+            <Label Content="!!" FontSize="25" FontFamily="Verdana"  Margin="80,00,00,00" Foreground="#FE5F00" FontWeight="Bold"></Label>
+            <Label Content="!!!" FontSize="25" FontFamily="Verdana" HorizontalContentAlignment="Right" Margin="80,0,0,0" Foreground="#D00000" FontWeight="Bold"></Label>
         </StackPanel>
-        <StackPanel HorizontalAlignment="Left" Height="75" Margin="10,75,0,0" Grid.Row="4" VerticalAlignment="Top" Width="377" Grid.Column="0" Orientation="Horizontal">
-            <RadioButton IsChecked="False" Margin="31,0,0,0" BorderBrush="#FF31CB00" BorderThickness="2" Name="easy" ></RadioButton>
-            <RadioButton IsChecked="False" Margin="88,00,00,00" BorderBrush="#FDE74C" BorderThickness="2" Name="medium"></RadioButton>
+        <StackPanel HorizontalAlignment="Left" Height="71" Margin="10,76,0,0" Grid.Row="2" VerticalAlignment="Top" Width="298" Grid.Column="1" Orientation="Horizontal">
+            <RadioButton IsChecked="True" Margin="31,0,0,0" BorderBrush="#FF31CB00" BorderThickness="2" Name="easy" ></RadioButton>
+            <RadioButton IsChecked="False" Margin="88,00,00,00" BorderBrush="#FE5F00" BorderThickness="2" Name="medium"></RadioButton>
             <RadioButton IsChecked="False" Margin="98,0,0,0" BorderBrush="#D00000" BorderThickness="2" Name="hard"></RadioButton>
         </StackPanel>
 

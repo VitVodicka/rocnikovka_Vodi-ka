@@ -31,18 +31,18 @@ namespace rocnikovka_Vodička
         {
             if (easy.IsChecked == true )
             {
-                log.AddingRemark(upominka.Text, podrobnosti.Text, dateInput.SelectedDate, "easy");
+                log.AddingRemark(upominka.Text, dateInput.SelectedDate, "easy");
             }
             if (medium.IsChecked == true)
             {
-                log.AddingRemark(upominka.Text, podrobnosti.Text, dateInput.SelectedDate, "medium");
+                log.AddingRemark(upominka.Text, dateInput.SelectedDate, "medium");
             }
             if (hard.IsChecked == true)
             {
-                log.AddingRemark(upominka.Text, podrobnosti.Text, dateInput.SelectedDate, "hard");
+                log.AddingRemark(upominka.Text, dateInput.SelectedDate, "hard");
             }
             this.Close();//po přidání upomínky, zavře se okno
-            podrobnosti.Text = log.TodayNowDate.ToString();
+            //podrobnosti.Text = log.TodayNowDate.ToString(); nevím, k čemu to bylo
         }
     }
 }
