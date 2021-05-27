@@ -25,17 +25,15 @@ namespace rocnikovka_Vodička
         }
         private void ButtonOdstraneni(object sender, RoutedEventArgs e)
         {
-            Button clickedButton = (Button)sender;
+            Button clickedButton = (Button)sender;  
             string nazev = clickedButton.Name;
             String posledni_slova = nazev.Substring(nazev.Length - 2);
-            string textnazev = "text" + posledni_slova;
-            Object tex = new Object();
-            tex = (Object)textnazev;
-            TextBox ty = tex as TextBox;
-            ty.Text = "";
+            string textnazev= "text"+posledni_nazev;
+            Textbox ty =(Textbox)textnazev;
+            ty.Text ="";
             clickedButton.Visibility = Visibility.Hidden;
 
         }
-
     }
+
 }
