@@ -70,6 +70,7 @@
     <Compile Include="pripominky.xaml.cs">
       <DependentUpon>pripominky.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Text.cs" />
     <Compile Include="uctik2.xaml.cs">
       <DependentUpon>uctik2.xaml</DependentUpon>
     </Compile>

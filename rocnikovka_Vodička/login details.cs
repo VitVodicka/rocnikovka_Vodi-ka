@@ -10,10 +10,13 @@ using System.Collections.ObjectModel;
 
 namespace rocnikovka_Vodička
 {
-    class login_details:INotifyPropertyChanged// zde je implementováno rozhraní pro aktualizaci prvků
+    class login_details : INotifyPropertyChanged// zde je implementováno rozhraní pro aktualizaci prvků
     {
         public ObservableCollection<login> listPrihlasovani { get; set; }//list, do kterého se přidávají uživatelské údaje(email, heslo, přezdívka)
         public List<events> listEvents { get; set; }
+        public List<Text> listEasy { get; set; }
+        public List<Text> listMedium{ get; set; }
+        public List<Text> listHard { get; set; }
         public int Index { get; set; }//meziproměnná s názvem index
         public string Help { get; set; }
         public string Helpik { get; set; }
@@ -47,14 +50,41 @@ namespace rocnikovka_Vodička
             //Console.WriteLine(datum);
             Helpik = datum;
         }
-        public void calenderSetting()
+        public void calenderSetting(DateTime datum)
         {
-            TodayNowDate = TodayNowDate.AddDays(datumDen);
-            TodayNowDate = TodayNowDate.AddMonths(datumMesic);
-            TodayNowDate = TodayNowDate.AddYears(datumRok);
-            Helpik = TodayNowDate.ToString();
+            TodayNowDate = datum;
+
 
         }
+        public void ListImportance()
+        {
+            for(int i = 0; i < listEvents.Count; i++)
+            {
+                if (listEvents[i].Importance == "easy")
+                {
+                    Text en = new Text(listEvents[i].Name,listEvents[i].Datum);
+                    listEasy.Add(en);
+                }
+                if (listEvents[i].Importance == "medium")
+                {
+                    Text en = new Text(listEvents[i].Name, listEvents[i].Datum);
+                    listEasy.Add(en);
+                }
+                if (listEvents[i].Importance == "hard")
+                {
+                    Text en = new Text(listEvents[i].Name, listEvents[i].Datum);
+                    listEasy.Add(en);
+                }
+            }
+            
+        }
+        public string ImportancetoText(List<Text> t, int index)
+        {
+            string text = t[index].Datum.ToString() + " " + t[index].Name;
+            return text;
+        }
+        //64
+        //kouknout se na počet, odstranit přebytečný počet
         public void AddingRemark(string remark, DateTime? date, string importance)
         {
             events eventik = new events(remark, date, importance);
@@ -65,6 +95,9 @@ namespace rocnikovka_Vodička
         {
             listPrihlasovani = new ObservableCollection<login>();
             listEvents = new List<events>();
+            listEasy = new List<Text>();
+            listMedium = new List<Text>();
+            listHard = new List<Text>();
             aktualniDatum = DateTime.Today;
         }
         public login_details(DateTime datumik)
@@ -78,9 +111,10 @@ namespace rocnikovka_Vodička
         }
         public void DatumOdebrani()
         {
-            if (aktualniDatum !=null) { 
-            aktualniDatum = aktualniDatum.AddMonths(-1);//odebrání 1 měsíce od datumu
-            Zmena("aktualniDatum"); ;//aktualizace proměnné aktuálníDatum
+            if (aktualniDatum != null)
+            {
+                aktualniDatum = aktualniDatum.AddMonths(-1);//odebrání 1 měsíce od datumu
+                Zmena("aktualniDatum"); ;//aktualizace proměnné aktuálníDatum
             }
         }
 
@@ -96,9 +130,10 @@ namespace rocnikovka_Vodička
         }
         public void Delete(login log)//odstranění položky z listu pro přihlašování
         {
-            if (listPrihlasovani != null) { 
-            listPrihlasovani.Remove(log); 
-            Zmena("listPrihlasovani");
+            if (listPrihlasovani != null)
+            {
+                listPrihlasovani.Remove(log);
+                Zmena("listPrihlasovani");
             }
         }
         public void Comparing(login log)//porovnávání přezdívky nebo mailu s vybraným políčkem jména nebo emailu
@@ -124,22 +159,23 @@ namespace rocnikovka_Vodička
 
         public void Passcheck(string passInput)
         {
-            if((passInput==null) || (listPrihlasovani[Index] != null)) { 
-            if (passInput == listPrihlasovani[Index].Heslo)
+            if ((passInput == null) || (listPrihlasovani[Index] != null))
             {
-                hlavni_kalendar hlavni = new hlavni_kalendar();
-                hlavni.Show();//otevrení kalendáře
+                if (passInput == listPrihlasovani[Index].Heslo)
+                {
+                    hlavni_kalendar hlavni = new hlavni_kalendar();
+                    hlavni.Show();//otevrení kalendáře
 
 
-            }
-            else
-            {
-                Help = "Špatné Heslo";
-                Thread.Sleep(TimeSpan.FromSeconds(10));//nechá uspat celkový proces do té doby než se napočítá počet sekund a pak proces jede dál
-                Help = "";
-                Zmena("Help");
-                //try a catch
-            }
+                }
+                else
+                {
+                    Help = "Špatné Heslo";
+                    Thread.Sleep(TimeSpan.FromSeconds(10));//nechá uspat celkový proces do té doby než se napočítá počet sekund a pak proces jede dál
+                    Help = "";
+                    Zmena("Help");
+                    //try a catch
+                }
             }
             //ted jen dodělat checkování popup hesla s list heslem a odbugování pomocí try
         }
@@ -195,8 +231,9 @@ namespace rocnikovka_Vodička
             string pocetDni = rok[mesicCislo * 2];
             return int.Parse(pocetDni);// odečte se a přičte se 1, kvůli rozdílu v datumu a listu
         }
-        
-        public void Save(login lo){//vytvořit soubor
+
+        #region ukladani a otevirani
+        /*public void Save(login lo){//vytvořit soubor
             
         using (StreamWriter sw = new StreamWriter(@"soubor.txt", true))
         {
@@ -234,8 +271,8 @@ namespace rocnikovka_Vodička
         }
 }
     }
-    #region ukladani a otevirani
-    /*public void Save(login lo){
+    
+    public void Save(login lo){
         try {
 
             using (StreamWriter sw = new StreamWriter(@"user.txt", true))
@@ -274,7 +311,8 @@ namespace rocnikovka_Vodička
       return list;  
 
     }*/
-}
-    #endregion ukladani a otevirani
 
+        #endregion ukladani a otevirani
+    }
+}
 

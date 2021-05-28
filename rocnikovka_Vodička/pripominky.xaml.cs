@@ -28,8 +28,10 @@ namespace rocnikovka_Vodička
             Button clickedButton = (Button)sender;  
             string nazev = clickedButton.Name;
             String posledni_slova = nazev.Substring(nazev.Length - 2);
-            string textnazev= "text"+posledni_nazev;
-            Textbox ty =(Textbox)textnazev;
+            string textnazev = "text" + posledni_slova;
+            Object tex = new Object();
+            tex = (Object)textnazev;
+            TextBox ty = tex as TextBox;
             ty.Text ="";
             clickedButton.Visibility = Visibility.Hidden;
 

@@ -66,15 +66,12 @@ namespace rocnikovka_Vodička
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            //int datumDen = int.Parse(((Button)sender).Content.ToString());
-            //int datumDen = int.Parse(((Button)sender).Content.ToString());
-            //int datumMesic = int.Parse(log.aktualniDatum.Month.ToString());
-            //int datumRok = int.Parse(log.aktualniDatum.Year.ToString());
-            log.datumDen = 5;
-            log.datumMesic = 5;
-            log.datumRok = 2020;
-            //DateTime datum = new DateTime(datumDen, datumMesic, datumRok);
-            //log.calenderSetting(datumDen, datumMesic, datumRok);
+            int datumDen = int.Parse(((Button)sender).Content.ToString());
+            int datumMesic = int.Parse(log.aktualniDatum.Month.ToString());
+            int datumRok = int.Parse(log.aktualniDatum.Year.ToString());
+
+            DateTime datum = new DateTime(datumDen, datumMesic, datumRok);
+            log.calenderSetting(datum);
 
 
 
