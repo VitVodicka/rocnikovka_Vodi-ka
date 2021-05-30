@@ -19,10 +19,10 @@ namespace rocnikovka_Vodička
     /// </summary>
     public partial class add_page : Window
     {
-        login_details log = new login_details();//vytvoření třídy login_details v add_page
-        public add_page()
+        login_details log;//vytvoření třídy login_details v add_page
+        public add_page(login_details _log)
         {
-
+            log = _log;
             InitializeComponent();
         }
 

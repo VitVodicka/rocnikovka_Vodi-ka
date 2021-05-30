@@ -19,16 +19,19 @@ namespace rocnikovka_Vodička
     /// </summary>
     public partial class password2 : Window
     {
-        login_details log = new login_details();//vytváření třídy login_details v password okně
-        public password2()
+        login_details log;//vytváření třídy login_details v password okně
+        private int indexUzivatele = 0;
+        public password2(login_details log2, int indexUzivatele2)
         {
             InitializeComponent();
+            indexUzivatele = indexUzivatele2;
+            log = log2;
             DataContext = log;
         }
 
         private void okButton(object sender, RoutedEventArgs e)
         {//zjištuje, pomocí funkce passcheck, zda se shodují hesla z popupu a databáze
-            log.Passcheck(passwordInput.Text);
+            log.Passcheck(indexUzivatele, passwordInput.Text);
             this.Close();
         }
     }

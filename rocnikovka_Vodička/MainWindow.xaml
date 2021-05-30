@@ -20,8 +20,8 @@
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
         <Label Content="Přidání události " Grid.Column="0" Grid.ColumnSpan="2" HorizontalAlignment="Center"  VerticalAlignment="Center" FontFamily="Segoe UI Black" FontSize="36" Foreground="White"/>
-        <TextBox HorizontalAlignment="Center" Height="36"  Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" TextWrapping="Wrap" Text="12345678912345678912345678912345678912345678912" VerticalAlignment="Center" Width="646" Background="Black" FontFamily="Verdana" FontSize="22" Foreground="White" TextAlignment="Center" SelectionBrush="White" BorderThickness="3" BorderBrush="White" CaretBrush="White" Name="upominka" />
-        <DatePicker HorizontalAlignment="Center" Margin="50,15,71,6" Grid.Row="2" VerticalAlignment="Center" Width="226" Height="136" Background="White" Name="dateInput" DisplayDate="{Binding TodayNowDate, Mode=OneTime}">
+        <TextBox HorizontalAlignment="Center" Height="36"  Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="646" Background="Black" FontFamily="Verdana" FontSize="22" Foreground="White" TextAlignment="Center" SelectionBrush="White" BorderThickness="3" BorderBrush="White" CaretBrush="White" Name="upominka" />
+        <DatePicker HorizontalAlignment="Center" Margin="50,15,71,6" Grid.Row="2" VerticalAlignment="Center" Width="226" Height="136" Background="White" Name="dateInput" SelectedDate="{Binding TodayNowDate, Mode=OneTime}">
             <DatePicker.BorderBrush>
                 <LinearGradientBrush EndPoint="0.5,0" StartPoint="0.5,1">
                     <GradientStop Color="White" Offset="0"/>
@@ -42,6 +42,7 @@
             <RadioButton IsChecked="False" Margin="88,00,00,00" BorderBrush="#FE5F00" BorderThickness="2" Name="medium"></RadioButton>
             <RadioButton IsChecked="False" Margin="98,0,0,0" BorderBrush="#D00000" BorderThickness="2" Name="hard"></RadioButton>
         </StackPanel>
+        <TextBlock HorizontalAlignment="Left" TextAlignment="Center" Margin="24,48.4,0,0" Grid.Row="3" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="60" Width="252" FontFamily="Verdana" Foreground="White" FontSize="16" Name="bug"/>
 
 
     </Grid>

@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="pripominky" Height="450" Width="800">
     <Grid Background="Black">
-        <TabControl HorizontalAlignment="Center" Height="411" Margin="10,0,10,10" VerticalAlignment="Top" Width="774" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" >
+        <TabControl HorizontalAlignment="Center" Height="411" MinHeight="411" MaxHeight="411" Margin="10,0,10,10" VerticalAlignment="Top" Width="774" MinWidth="774" MaxWidth="774"  HorizontalContentAlignment="Center" VerticalContentAlignment="Center" >
             <TabControl.Resources>
                 <Style TargetType="{x:Type TabPanel}">
                     <Setter Property="HorizontalAlignment" Value="Center"></Setter>
@@ -49,7 +49,7 @@
                     <Button  HorizontalAlignment="Left" Margin="217,303,0,0" VerticalAlignment="Top" Width="20" Height="20" Grid.Column="1" BorderBrush="#FF49E01C" Background="White" BorderThickness="2" Name="Button27" Click="ButtonOdstraneni"/>
                     <Button  HorizontalAlignment="Left" Margin="217,328,0,0" VerticalAlignment="Top" Width="20" Height="20" Grid.Column="1" BorderBrush="#FF49E01C" Background="White" BorderThickness="2" Name="Button28" Click="ButtonOdstraneni"/>
 
-                    <TextBlock HorizontalAlignment="Left" Margin="35,3,0,0" TextWrapping="Wrap" Text="123456789123456789123456789123456789123456789" VerticalAlignment="Top" Height="20" Grid.ColumnSpan="2" Width="340" FontSize="14" Foreground="Black" Name="text01"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="35,3,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="20" Grid.ColumnSpan="2" Width="340" FontSize="14" Foreground="Black" Name="text01"/>
                     <TextBlock HorizontalAlignment="Left" Margin="35,28,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="20" Grid.ColumnSpan="2" Width="340" FontSize="13" Foreground="Black" Name="text02"/>
                     <TextBlock HorizontalAlignment="Left" Margin="35,53,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="20" Grid.ColumnSpan="2" Width="340" FontSize="13" Foreground="Black" Name="text03"/>
                     <TextBlock HorizontalAlignment="Left" Margin="35,78,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="20" Grid.ColumnSpan="2" Width="340" FontSize="13" Foreground="Black" Name="text04"/>

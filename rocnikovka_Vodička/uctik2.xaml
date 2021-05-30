@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:rocnikovka_Vodička"
         mc:Ignorable="d"
-        Title="uctik2" Height="450" Width="800">
+        Title="uctik2" Height="450" MinHeight="450" MaxHeight="450" Width="800" MinWidth="800" MaxWidth="800">
     
     <Grid Background="Black">
     

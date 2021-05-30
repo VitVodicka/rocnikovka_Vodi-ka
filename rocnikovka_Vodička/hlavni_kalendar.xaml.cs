@@ -25,7 +25,6 @@ namespace rocnikovka_Vodička
         {
             InitializeComponent();
             DataContext = log;
-            log.SettingDays(mesicnidatum.Text);
             ZviditelnujTlacitka();
         }
 
@@ -62,20 +61,21 @@ namespace rocnikovka_Vodička
                 }
             }
         }
+       
 
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void Button_Click(object sender, RoutedEventArgs e)//otevře okno pro přidání poznámky s daným datem
         {
             int datumDen = int.Parse(((Button)sender).Content.ToString());
             int datumMesic = int.Parse(log.aktualniDatum.Month.ToString());
             int datumRok = int.Parse(log.aktualniDatum.Year.ToString());
 
-            DateTime datum = new DateTime(datumDen, datumMesic, datumRok);
+            DateTime datum = new DateTime(datumRok, datumMesic, datumDen);
             log.calenderSetting(datum);
 
 
 
-            MainWindow ma = new MainWindow();
+            MainWindow ma = new MainWindow(log);
             ma.Show();
         }
         
@@ -83,9 +83,9 @@ namespace rocnikovka_Vodička
 		{
 			string contentik = ((Button)sender).Content.ToString(); 
 		}*/
-        private void Button_Click3(object sender, RoutedEventArgs e)
+        private void Button_Click3(object sender, RoutedEventArgs e)//otevře seznam připomínek
 		{
-			pripominky pr = new pripominky();
+			pripominky pr = new pripominky(log);
 			pr.Show();
 		}
 	}

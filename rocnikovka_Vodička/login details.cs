@@ -7,25 +7,29 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.IO;
 using System.Collections.ObjectModel;
+using System.Xml.Serialization;
 
 namespace rocnikovka_Vodička
 {
-    class login_details : INotifyPropertyChanged// zde je implementováno rozhraní pro aktualizaci prvků
+    public class login_details : INotifyPropertyChanged// zde je implementováno rozhraní pro aktualizaci prvků
     {
         public ObservableCollection<login> listPrihlasovani { get; set; }//list, do kterého se přidávají uživatelské údaje(email, heslo, přezdívka)
-        public List<events> listEvents { get; set; }
-        public List<Text> listEasy { get; set; }
-        public List<Text> listMedium{ get; set; }
-        public List<Text> listHard { get; set; }
+        public List<events> listEvents { get; set; }//list poznámek před rostřízením
+        public List<events> listEasy { get; set; }//list easy poznámek
+        public List<events> listMedium { get; set; }//list medium poznámek
+        public List<events> listHard { get; set; }//list hard poznámek
         public int Index { get; set; }//meziproměnná s názvem index
-        public string Help { get; set; }
-        public string Helpik { get; set; }
-        public DateTime TodayNowDate { get; set; }
+        public string Help { get; set; }//proměnná, když nastane nějaký error
+        public string Helpik { get; set; }//proměnná, když nastane nějaký error
+        public DateTime TodayNowDate { get; set; }//pomocná proměnná
+        public int Easycounter { get; set; }//proměnná, které počítá počet easy poznámek 
+        public int Mediumcounter { get; set; }//proměnná, které počítá počet medium poznámek 
+        public int Hardcounter { get; set; }//proměnná, které počítá počet hard poznámek 
 
-        public DateTime aktualniDatum { get; set; }
-        public int datumRok { get; set; }
-        public int datumMesic { get; set; }
-        public int datumDen { get; set; }
+        public DateTime aktualniDatum { get; set; }//aktuální datum
+        public int datumRok { get; set; }//pomocná proměnná
+        public int datumMesic { get; set; }//pomocná proměnná
+        public int datumDen { get; set; }//pomocná proměnná
 
         //proměnná s aktuálním datumem, která má ze začátku aktuální datum, ale pomocí tlačítek plus a mínus mění měsíce
 
@@ -45,43 +49,39 @@ namespace rocnikovka_Vodička
         public List<string> DateCalendar2024 = new List<string> { "31", "1", "29", "4", "31", "5", "30", "1", "31", "3", "30", "6", "31", "1", "31", "4", "30", "7", "31", "2", "30", "5", "31", "7" };
         public List<string> DateCalendar2025 = new List<string> { "31", "3", "28", "6", "31", "6", "30", "2", "31", "4", "30", "7", "31", "2", "31", "5", "30", "1", "31", "3", "30", "6", "31", "1" };
         public List<string> DateCalendar2026 = new List<string> { "31", "4", "28", "7", "31", "7", "30", "3", "31", "5", "30", "1", "31", "3", "31", "6", "30", "2", "31", "4", "30", "7", "31", "2" };
-        public void SettingDays(string datum)
-        {
-            //Console.WriteLine(datum);
-            Helpik = datum;
-        }
-        public void calenderSetting(DateTime datum)
+        
+        public void calenderSetting(DateTime datum)//nastaví do proměnné TodaynowDate aktuální datum
         {
             TodayNowDate = datum;
 
 
         }
-        public void ListImportance()
+        public void ListImportance()//roztřídí poznámky na základě své důležitosti do různých tříd
         {
+            listEasy.Clear();
+            listMedium.Clear();
+            listHard.Clear();
+
             for(int i = 0; i < listEvents.Count; i++)
             {
                 if (listEvents[i].Importance == "easy")
                 {
-                    Text en = new Text(listEvents[i].Name,listEvents[i].Datum);
-                    listEasy.Add(en);
+                    listEasy.Add(listEvents[i]);
+                    Easycounter += 1;
                 }
                 if (listEvents[i].Importance == "medium")
                 {
-                    Text en = new Text(listEvents[i].Name, listEvents[i].Datum);
-                    listEasy.Add(en);
+                    listMedium.Add(listEvents[i]);
+                    Mediumcounter += 1;
                 }
                 if (listEvents[i].Importance == "hard")
                 {
-                    Text en = new Text(listEvents[i].Name, listEvents[i].Datum);
-                    listEasy.Add(en);
+                    listHard.Add(listEvents[i]);
+                    Hardcounter += 1;
+                    
                 }
             }
             
-        }
-        public string ImportancetoText(List<Text> t, int index)
-        {
-            string text = t[index].Datum.ToString() + " " + t[index].Name;
-            return text;
         }
         //64
         //kouknout se na počet, odstranit přebytečný počet
@@ -95,9 +95,9 @@ namespace rocnikovka_Vodička
         {
             listPrihlasovani = new ObservableCollection<login>();
             listEvents = new List<events>();
-            listEasy = new List<Text>();
-            listMedium = new List<Text>();
-            listHard = new List<Text>();
+            listEasy = new List<events>();
+            listMedium = new List<events>();
+            listHard = new List<events>();
             aktualniDatum = DateTime.Today;
         }
         public login_details(DateTime datumik)
@@ -136,32 +136,17 @@ namespace rocnikovka_Vodička
                 Zmena("listPrihlasovani");
             }
         }
-        public void Comparing(login log)//porovnávání přezdívky nebo mailu s vybraným políčkem jména nebo emailu
-        {
-
-            for (int i = 0; i < listPrihlasovani.Count; i++)
-            {
-                if (log.Prezdivka == listPrihlasovani[i].Prezdivka)
-                {
-                    Index = i;
-                }
-                if (log.Mail == listPrihlasovani[i].Mail)
-                {
-                    Index = i;
-                }
-            }
-        }
 
         //kontrluje, zda se heslo zadané v popupu rovná s heslem v databázi
         //pokud se heslo z popupu bude shodovat s heslem z databáze, otevře se hlavní kalendář
         //pokud se heslo z popupu nebude shodovat s heslem z databáze, zobrazí se v popupu text špatné heslo, které po 10 sekundách zmizí
 
 
-        public void Passcheck(string passInput)
+        public void Passcheck(int indexik, string passInput)
         {
-            if ((passInput == null) || (listPrihlasovani[Index] != null))
+            if ((passInput == null) || (listPrihlasovani[indexik] != null))
             {
-                if (passInput == listPrihlasovani[Index].Heslo)
+                if (passInput == listPrihlasovani[indexik].Heslo)
                 {
                     hlavni_kalendar hlavni = new hlavni_kalendar();
                     hlavni.Show();//otevrení kalendáře
@@ -231,88 +216,6 @@ namespace rocnikovka_Vodička
             string pocetDni = rok[mesicCislo * 2];
             return int.Parse(pocetDni);// odečte se a přičte se 1, kvůli rozdílu v datumu a listu
         }
-
-        #region ukladani a otevirani
-        /*public void Save(login lo){//vytvořit soubor
-            
-        using (StreamWriter sw = new StreamWriter(@"soubor.txt", true))
-        {
-        sw.WriteLine(lo.Prezdivka.toString());
-        sw.WriteLine(lo.Mail.toString());
-        sw.WriteLine(lo.Heslo.toString());
-        sw.Flush();
-        }
-        }
-        public List<> Load(){
-            
-        int counter = 0;
-        int counter2 = counter -3;
-        int i = 0;
-            
-        using (StreamReader sr = new StreamReader(@"soubor.txt"))
-        {
-        List<string> list = new List<string>();    
-        string s;
-            
-        while ((s = sr.ReadLine()) != null)
-        {
-            counter +=1;
-            Console.WriteLine(s);
-        }
-        while ((s = sr.ReadLine()) != null)
-        {
-            i+=1;
-            if(counter2 ==i){
-            list.Add(s);
-            }
-        }
-          return List;  
-            
-        }
-}
-    }
-    
-    public void Save(login lo){
-        try {
-
-            using (StreamWriter sw = new StreamWriter(@"user.txt", true))
-            {
-
-                sw.WriteLine(lo.Prezdivka.ToString());
-                sw.WriteLine(lo.Mail.ToString());
-                sw.WriteLine(lo.Heslo.ToString());
-                sw.Flush();
-            }
-            }
-        catch { }
-    public List<string> Load(){
-
-    int counter = 0;
-    int counter2 = counter -3;
-    int i = 0;
-
-    using (StreamReader sr = new StreamReader(@"user.txt"))
-    {
-    List<string> list = new List<string>();    
-    string s;
-
-    while ((s = sr.ReadLine()) != null)
-    {
-        counter +=1;
-        Console.WriteLine(s);
-    }
-    while ((s = sr.ReadLine()) != null)
-    {
-        i+=1;
-        if(counter2 ==i){
-        list.Add(s);
-        }
-    }
-      return list;  
-
-    }*/
-
-        #endregion ukladani a otevirani
     }
 }
 
